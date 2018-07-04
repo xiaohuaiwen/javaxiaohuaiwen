@@ -1,0 +1,115 @@
+/* CSS Document longChan 2014.04.23 搜索器 */
+body{background:#fff;color:#333;margin:0;padding:0; font-size:12px }
+a { text-decoration:none}
+a:hover { text-decoration:underline}
+div,form,img,ul,ol,li,dl,dt,dd,p{margin:0;padding:0;border:0;}
+li{list-style-type:none;}
+h1,h2,h3,h4,h5,h6{margin:0;padding:0;font-size:12px;font-weight:normal;}
+.flol{float:left}
+.clear{ clear:both; font-size:0; height:0; line-height:0; overflow:hidden;}
+
+/*首页大搜索 begin*/
+.soufunsearch110615{width:922px;height:125px;margin:0 auto; font-family:Microsoft YaHei;}
+.soufunsearch110615logo{float:left;width:200px;height:81px;margin-top:25px;}
+.soufunsearch110615city{line-height:21px;text-align:center;font-size:14px;color:#333; margin-top:8px;}/*2013930*/
+.soufunsearch110615city strong{ font-weight:bold}
+.soufunsearch110615city a{color:#333;}
+.soufunsearch110615city p{line-height:21px;margin:0;padding:0;}
+.soufunsearch110615city p.zilink,.soufunsearch110615city p.zilink a{color:#049;font-size:12px;}
+.soufunsearch110615right{float:left;width:721px;height:125px;}
+.soufunsearch110615rightnav{width:598px;height:25px;line-height:25px;padding:0 7px;font-size:14px;}/*2013930*/
+.soufunsearch110615rightnav em{font-style:normal;background:url(../images/searchnew11061502.gif) no-repeat right 5px;padding-right:13px!important;padding-right:11px;position:relative;z-index:9999 }/*2013930*/
+.soufunsearch110615rightnav .navtd,.soufunsearch110615rightnav .navtdup{float:left;width:auto;padding:0 10px;cursor:pointer;}
+.soufunsearch110615rightnav .navtd,.soufunsearch110615rightnav .navtd a{color:#333;}
+.soufunsearch110615rightnav .navtdup{font-weight:bold;color:#c40000;background:url(../images/searchnew11061501.gif) center no-repeat;}
+.soufunsearch110615rightform{width:697px;height:89px;background:url(../images/searchnew12301.gif) no-repeat;padding:12px 12px 0 12px;z-index:99;}/*20131121*/
+.soufunsearch110615rightform form{margin:0;padding:0;border:0;}
+.soufunsearch110615rightform .inputbox{float:left;width:512px;height:27px;padding:3px 5px;overflow:hidden;border:none;background:url(../images/searchnew110615.gif) no-repeat 0 -85px;}
+.soufunsearch110615rightform .tr01{height:40px;position: relative;z-index:998;}
+.soufunsearch110615rightform .inpbj {background:url(../images/searchnew12301.gif) no-repeat scroll 0px -419px;display:block;height:17px;left:5px;position:absolute;top:11px;width:18px;}
+.soufunsearch110615rightform label {color:#888;cursor:inherit;display:block;left:26px;position:absolute;top:9px;font-size:14px;}
+.soufunsearch110615rightform .tr02{height:30px;margin-top:7px;} 
+.more0413pm {width:88px;border:1px solid #c40000; background:#fff;position:absolute;top:22px;left:9px;}/*新增下拉*/
+.more0413pm li{width:88px;height:24px;line-height:24px;font-size:13px;}/*新增下拉*/
+.more0413pm li a{display:block;width:83px;height:24px;line-height:24px;text-decoration:none;padding-left:5px;}/*新增下拉*/
+.more0413pm li a:hover{display:block;width:83px;height:24px;line-height:24px;background:#ededed;text-decoration:none;padding-left:5px;}/*新增下拉*/
+#input_keyw0{float:left;width:569px;height:39px;line-height:39px;color:#888;overflow:hidden;border:0;font-size:14px;padding:0 6px 0 16px;overflow:hidden;border:none; margin-left: 0; font-family:"微软雅黑"; outline:none;}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+#input_keyw0{width:569px;padding:0 6px 0 16px}
+} /*20131121*/
+.inputstyle_out,.inputstyle_on,.inputstyle_move,.inputstyle_off{float:left;width:569px;height:41px;line-height:41px;color:#888;overflow:hidden;border:0;font-size:14px;padding:0 6px;overflow:hidden;border:none;background:url(../images/searchnew12301.gif) no-repeat 0 -127px;_background-attachment:fixed;}/*2013930*/
+.inputstyle_on{background:url(../images/searchnew12301.gif) no-repeat 0 -187px;_background-attachment:fixed;}
+.inputstyle_move{background:url(../images/searchnew12301.gif) no-repeat 0 -187px;_background-attachment:fixed;}
+.inputstyle_off{background:url(../images/searchnew12301.gif) no-repeat 0 -127px;_background-attachment:fixed;}
+.soufunsearch110615rightform .button{float:left;cursor:pointer;border:0;width:106px;height:39px; margin-left:0;line-height:39px;background:url(../images/sbutton.gif) no-repeat;outline:none}
+a.menubar:visited{color:#888;}
+a.menubar:hover{color:#888;}
+a.menubar{float:left;color:#888;cursor:pointer;width:96px;height:28px;line-height:28px;display:block;text-decoration:none;overflow:hidden;padding-left:5px;cursor:default; font-size: 14px;}
+a.menubar:hover,a.menubarnewOn{text-decoration:none;}
+#strDistrict0_a,#strDistrict0_a:hover,#strPurpose0_a,#strPurpose0_a:hover,#strPrice0_a,#strPrice0_a:hover{background:url(../images/searchnew12301.gif) no-repeat 0 -255px transparent; cursor: pointer;}
+#strDistrict0_a:hover,#strPurpose0_a:hover,#strPrice0_a:hover{background-position:0 -290px;}
+#strPurpose0_a{margin-left:4px;}
+#strPrice0_a,#strPrice0_a:hover{margin-left:4px;width:96px;}
+.soufunsearch110615rightform .searchmap{float:left;color:#333;margin-top:6px;margin-left:25px;line-height:22px;background:url(../images/searchnew12301.gif) no-repeat -34px -417px transparent;padding-left:16px;}/*20120502*/
+.soufunsearch110615rightform .searchmap a{color:#333;}/*20120502*/
+.soufunsearch110615rightform .checkbox{vertical-align:middle;margin-top:-3px;margin-bottom:1px;}
+.soufunsearch110615rightform .mobile{float:left;color:#333;margin:6px 25px 0 25px;line-height:22px;background:url(../images/searchnew12301.gif) no-repeat 0px -451px transparent;padding-left:20px;}/*2013930*/
+.soufunsearch110615rightform .mobile a{color:#333;}/*20120502*/
+/*首页大搜索 end*/
+
+/*限制输入字不超宽*/
+.paneltable{background:#fff;border:1px solid #c40000;padding:1px;}
+.paneltable a{display:block;margin:0 auto;padding:4px;font-size:12px;height:14px;line-height:14px;color:#333;white-space:nowrap;text-decoration:none;}
+.paneltable a:hover,.suggest_selected{height:14px;line-height:14px;font-size:12px;background:#ededed;color:#333;white-space:nowrap;}
+.paneltable a.panelcurrent{height:14px;line-height:14px;font-size:12px;background:#0076dd;color:#fff;white-space:nowrap;}
+.priceinput{border:1px solid #CACACA;font-size:11px;}
+.pricebutton{font-size:12px;color:#333;border:solid 1px #A9A9A9;display:inline-block;width:39px;height:18px;line-height:18px;background-color:#F6F6F6;background-image:url(../images/price_bg.png);background-repeat:repeat-x;}
+.pricebutton:hover{cursor:pointer;}
+.priceself{border-top:1px solid #E2F3FF;line-height:20px;padding:2px;}
+.tbheadmore{color:#c40000;font-size:12px;font-weight:bold;line-height:26px;height:26px;overflow:hidden;}
+.tbheadmore span{padding-left:4px;}
+th.tbheadmore{text-align:left;padding-left:3px;}
+/*1203*/
+.soufunsearch110615rightform .mobile{position:relative;}
+.soufunsearch110615rightform .mobile.active div{display:block;z-index:9999}
+.mobileb{width:100px;height:130px;padding:13px 13px 0 13px;overflow:hidden;display:none;position:absolute;left:-20px;top:20px; background:url(../images/appico3.gif) no-repeat; z-index:2;}
+.mobileb img{float:left;width:100px;height:100px;overflow:hidden;}
+.mobileb span{float:left;width:100px;font-size:12px;height:30px;line-height:30px;color:#c40000;text-align:center;font-weight:bold;overflow:hidden; display:block;}
+
+/* 通行证导航 */
+.nav613 { width:auto; height:30px; background:url(../images/topnavbj.png) repeat-x; font-family:宋体; overflow:hidden }
+.nav613nr { width:1000px; margin:0 auto; }
+.nav613nr .s2 { float:right;padding-right:12px;line-height:30px;color:#999 }
+.nav613nr .s2 a{ margin-right: 2px;color:#333}
+.nav613nr .s1 { float:left; width:320px; line-height:30px;color:#999 }
+.nav613nr .s1 a { float:left;padding-left:14px;margin-right:5px; height:30px; line-height:30px; display:block ;color:#333}
+.nav613nr .s1 a.padd { padding-left:8px; }
+.sfmap, .sfzc, .sfdl, .sfb, .mob { background:url(../images/topnavbj.png) no-repeat 0 -30px; }
+.sfzc { background:url(../images/topnavbj.png) no-repeat 0 -60px  }
+.sfdl { background:url(../images/topnavbj.png) no-repeat 0 -90px  }
+.sfb { background:url(../images/topnavbj.png) no-repeat 0 -122px  }
+.mob { background:url(../images/topnavbj.png) no-repeat 0 -150px  }
+/* 全局 */
+.citynaw{ width:998px;border-left:1px solid #ddd;border-right:1px solid #ddd;margin:0px auto;}
+.citynawtitle{height:38px;background:url(../images/topnavbj.png) repeat-x 0 -187px;border-bottom:1px solid #c00;padding:0 10px;}
+.citynawtitle .s1,.citynawtitle .s2{float:left;height:37px;line-height:37px;font-size:14px;background:#c00;color:#fff;border:1px solid #c00;border-bottom:0px;padding:0 25px;position: relative;z-index:0}
+.citynawtitle .s1 a{color:#fff;}
+.citynawtitle .s2{background:none;line-height:38px;border:0px solid #c00;}
+.citynawtitle span{float:left; position:absolute;top:0px;right:-1px;color:#ccc;z-index:9999; line-height:38px;}
+.citynawtitle .s1 span{color:#c00;}
+.citynawtitle .s3 {float:right;height:30px;line-height:30px;margin-top:4px;}
+.citynawtitle .s3 a {padding-left:14px;display:block;}
+.citynawtitle a{ color:#333; text-decoration:none}
+.searchfb{float:right;width:90px;height:37px;background:url(../images/iconfb.gif) no-repeat 0 12px;position:relative;line-height:37px;font-size:12px;padding-left:20px;}
+.searchfb a{color:#333;text-decoration:none;}
+.searchfb a:hover{color:#c00;text-decoration:none;}
+.active{z-index:99;background:url(../images/iconfb.gif) no-repeat 0 12px;cursor:pointer;}
+.searchfb.active div{display:block;}
+.searchfbx{display:none;width:108px;position:absolute;left:0px;top:37px;background:#fff;font-size: 12px;border:1px solid #ce0000;overflow: hidden;cursor: pointer;z-index: 99999;display: none;}
+.searchfbx li{float:left;width:108px;height:30px;line-height:30px;color:#999;overflow:hidden;}
+.searchfbx li a{color:#999; display: block;text-decoration:none;padding-left:20px;}
+.searchfbx li a:hover{background:#eeeeee;text-decoration:none;color:#333;}
+<!--新搜索20120413 begin-->
+.soufunsearch110615rightnav .new1{ position:relative;margin-right:10px;}
+.soufunsearch110615rightnav .new2{width:24px;position:absolute;top:-5px;right:-13px;color:#c00;}
+.soufunsearch110615rightform .tr01 span { float: left;overflow: hidden;	}

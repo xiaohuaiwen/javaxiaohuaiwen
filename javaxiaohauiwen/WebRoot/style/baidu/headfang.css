@@ -1,0 +1,83 @@
+﻿/* CSS Document */
+.wrap{width:1000px; margin:0 auto}
+.floatl{ float:left}
+.floatr{ float:right}
+.blue,.blue a{color:#05b;}
+.yellow, .yellow a, .yellow a:link,.yellow a:active,.yellow a:visited,.yellow a:hover{color:#FF3300!important}
+.orange, .orange a:link, .orange a:visited {color:#FF3300!important}
+.blod{font-weight:700}
+/*topheader*/
+.topheader a:link,.topheader a:visited,.topheader a:active{color:#333;} 
+.topheader a:hover{color:#ff3300!important;text-decoration:underline;} 
+.topheader{width:1000px;height:30px;line-height:30px; border-bottom:1px solid #e8e8e8;margin:0 auto;font-family:arial !important;}
+.topheader dt{ float:left}
+.topheader dd{ float:right}
+.topheader .line{ padding:0 8px}
+.navself1 {width:1000px;}
+/*���������ֲ�����*/
+#strPrice0_a span {	display:inline-block;	white-space:nowrap;	overflow:hidden;	width:85px;}
+#strPrice0_a:hover{background:url(images/sch_bg3.gif) 0px -263px no-repeat;}
+#st_a{margin:0px;overflow:hidden;height:31px;line-height:31px;margin:0px;padding-left:5px;width:131px;}
+#st_a:hover{background:url(images/sch_bg3.gif) 0px -345px no-repeat;}
+#input_keyw0{float:left;width:565px;height:33px;line-height:33px;color:#888;overflow:hidden;border:0;font-size:14px;padding:0 6px;overflow:hidden;border:none; margin-left: 0;}
+.sch_text{float:left;height:31px;color:#888;line-height:27px;margin-left:4px;background:url(images/sch_bg3.gif) 0px -386px no-repeat;}
+.sch_text_r {background:url("images/sch_bg3.gif") no-repeat right -552px;display:inline-block;height:29px;line-height:27px;overflow:hidden;padding:2px;width:70px;}
+/* ������ ������ʽ 20100511*/
+.gray9,.gray9 a,.esflist .gray9 a{color:#999}
+.search_select{padding:0 5px;font:12px/24px Arial;border:1px solid #666666;position:absolute;top:-1px;z-index:100; cursor:pointer;}
+.search_select th{color:#014DA3; font-weight:normal;text-align:left;white-space:nowrap;}
+.search_select td{color:#666; text-align:right;white-space:nowrap;}
+.search_select .select th,.search_select .select td{background:#d3eaff;}
+
+a.menubarnew:visited{color:#888;}
+a.menubarnew:hover{color:#888;}
+a.menubarnew{float:left;color:#888;cursor:pointer;width:86px;height:22px;line-height:23px;display:block;text-decoration:none;overflow:hidden;padding-left:5px;cursor:default;}
+a.menubarnew:hover,a.menubarnewOn{text-decoration:none;}
+#strDistrictnew_a,#strDistrictnew_a:hover,#strPurposenew_a,#strPurposenew_a:hover,#strPricenew_a,#strRoomnew_a,#strPricenew_a:hover{background:url(images/searchnew12301.gif) no-repeat 0 -255px transparent; cursor: pointer;}
+#strDistrictnew_a:hover,#strPurposenew_a:hover,#strRoomnew_a:hover{background-position:0 -290px;}
+#strPurposenew_a,#strRoomnew_a{margin-left:4px;}
+#strPricenew_a,#strPricenew_a:hover{margin-left:4px;width:101px;background-position:0 -290px;}
+#strPricenew_a:hover{background-position:0 -290px;}
+.soufunsearch110615rightform .searchmap{float:right;color:#333;margin-top:3px;margin-left:25px;line-height:22px;background:url(images/searchnew110615.gif) no-repeat -34px -308px transparent;padding-left:12px;color:#049;}/*20120423*/
+.soufunsearch110615rightform .searchmap a{color:#049;}/*20120423*/
+.soufunsearch110615rightform .checkbox{vertical-align:middle;margin-top:-3px;margin-bottom:1px;}
+.soufunsearch110615rightform .mobile{float:right;color:#333;margin:3px 25px 0;line-height:22px;background:url(images/searchnew110615.gif) no-repeat 0px -342px transparent;padding-left:14px;color:#049;}/*20120423*/
+.soufunsearch110615rightform .mobile a{color:#049;}/*20120423*/
+
+.paneltable table td{padding:0px;}
+.paneltable{background:#fff;border:1px solid #3c91E0;padding:1px;}
+.paneltable a{display:block;margin:0 auto;padding:4px;font-size:12px;height:14px;line-height:14px;color:#004499;white-space:nowrap;text-decoration:none;}
+.paneltable a:hover,.suggest_selected{height:14px;line-height:14px;font-size:12px;background:#d0e1f5;color:#004499;white-space:nowrap;}
+.paneltable a.panelcurrent{height:14px;line-height:14px;font-size:12px;background:#2d7ec9;color:#fff;white-space:nowrap;}
+.priceinput{border:1px solid #CACACA;font-size:11px;}
+.pricebutton{font-size:12px;color:#333;border:solid 1px #A9A9A9;display:inline-block;width:39px;height:18px;line-height:18px;background-color:#F6F6F6;background-image:url(images/price_bg.png);background-repeat:repeat-x;}
+.pricebutton:hover{cursor:pointer;}
+.priceself{border-top:1px solid #E2F3FF;line-height:20px;padding:2px;}
+.priceself input{vertical-align:middle;}
+
+.showsearchdiv{display:none;position:absolute;z-index:1001;border:1px solid #c40000;margin-top:27px;height:auto;clear:borth;background-color:#ffffff;*margin-left:-101px;}    
+.showsearchPurpose{display:none;position:absolute;z-index:10;border:1px solid #c40000;margin-top:27px;width:95px;height:auto;clear:borth; background-color:#ffffff;margin-left:105px;*margin-left:-101px;}
+.showsearchRoom{display:none;position:absolute;z-index:10;border:1px solid #c40000;margin-top:27px;width:95px;height:auto;clear:borth;background-color:#ffffff;margin-left:320px;*margin-left:-101px;}
+ #table_districtlist tr td:hover{text-decoration:none;background-color:#ededed;}
+ #table_districtlist tr td{padding:2px;cursor:pointer;white-space:nowrap;color:#333;}
+ #table_subway tr td:hover{text-decoration:none;background-color:#ededed;}
+ #table_subway tr td{padding-left:2px;padding-right:2px;white-space:nowrap;cursor:pointer;color:#333;}
+.showsearchPrice{display:none;position:absolute;z-index:1001;border:1px solid #c40000;margin-top:27px;width:155px;height:auto;clear:borth; background-color:#ffffff;margin-left:210px;*margin-left:-105px;}   
+ .showitem dl{padding:3px;width:56px;display:inline-block;word-break:keep-all;cursor:pointer;color:#333;float:left;}
+ .showitem dl:hover{text-decoration:none;background-color:#ededed;}
+ .itemSelected{color:#333;background-color:#ededed;} 
+ .showitempurpose dl{padding:0px;padding-left:5px;width:94%;display:inline-block;word-break:keep-all;cursor:pointer;color:#333;}
+ .showitempurpose dl:hover{text-decoration:none;background-color:#ededed;} 
+ .showitemprice dl{padding:0px;padding-left:5px;padding-top:3px;width:95%;display:inline-block;word-break:keep-all;cursor:pointer;color:#333;}
+ .showitemprice dl:hover{text-decoration:none;background-color:#ededed;}
+ .searchInput{border:1px solid #ccc;width:40px;}
+ a.menubarnew:link{float:left;color:#888;cursor:pointer;width:86px;height:22px;line-height:23px;display:block;text-decoration:none;overflow:hidden;padding-left:5px;cursor:default;}
+/*moreCity*/
+.morecity{width:256px; background:#fff; border:1px solid #c40000; font:12px/24px "����";padding:10px 0 10px 9px;overflow:hidden;z-index:999;position:absolute;left:6px;}
+.morecity dd{width:46px; height:26px;margin-right:4px; display:inline;float:left;overflow: hidden;}
+.morecity dd a{ padding:4px 5px; text-decoration:none}
+.morecity dd a:hover{background:#ededed; color:#333; }
+.morecity dt{ float:right;padding-right:25px;} 
+.soufunsearch110615rightnav .navtdup a{color:#c40000; text-decoration:none}
+
+

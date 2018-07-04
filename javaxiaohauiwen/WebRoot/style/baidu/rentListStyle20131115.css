@@ -1,0 +1,595 @@
+﻿/*@charset "gb2312"; CSS Document Written By Nemo---20131112 */
+/*reset*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+select,input,img,select{vertical-align:middle;}
+ul,ol,li{list-style:none}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+a{text-decoration:none}
+a:hover,a:focus{text-decoration:underline}
+strong{font-weight:bold}
+input[type="submit"]{cursor:pointer}
+button{cursor:pointer;}
+/*page*/
+body{font-size:12px;font-family:Arial,SimSun;background:#fff;color:#333}
+a{color:#05b}a:hover{color:#f30}
+/*color*/
+.blue{ color:#05b}
+.org,.org a{color:#ff6a0d}.org a:hover{color:#f50}
+.green{color:#390}
+.red,.red a{color:#666}.red a:hover{color:#f30}
+.gray6,.gray6 a{color:#666}.gray6 a:hover{color:#f30}
+.black,.black a{color:#333}.black a:hover{color:#f30}
+.white,.white a{color:#fff}.white a:hover{color:#fff}
+/*public*/
+.mlr5{ margin:0 5px}
+.ml10{ margin-left:10px}
+.ml25{ margin-left:25px}
+.ml55{ margin-left:55px}
+.mt2{ margin-top:2px}
+.mt5{ margin-top:5px}
+.mt8{ margin-top:8px}
+.mt10{ margin-top:10px}
+.mt12{ margin-top:12px}
+.mt15{ margin-top:15px}
+.mt20{ margin-top:20px}
+.mt25{ margin-top:25px}
+.mr10{ margin-right:10px}
+.mr15{ margin-right:15px}
+.pl5{ padding-left:5px}
+.pl10{ padding-left:10px}
+.pl24{ padding-left:24px}
+.floatl{float:left}
+.floatr{float:right}
+.clear{ clear:both; font-size:0; line-height:0; height:0; overflow:hidden}
+.font14{ font-size:14px}
+.bold{ font-weight:bold}
+.alignR{ text-align:right}
+.num{ font:normal 30px/32px Arial; padding-right:5px}
+.num26{ font:normal 26px/65px Arial; padding-right:5px}
+.rel{position:relative}
+/*width*/
+.wid1000{ width:1000px; margin:0 auto}
+/*guide*/
+.guide{ margin-top:10px}
+.guide a{ padding:0 5px}
+/*icon*/
+.iconArea,.iconSubway,.iconBus,.iconSchool{background:url(images/icon15.gif) 0 2px no-repeat; padding-left:20px}
+.iconSubway{background-position:0 -25px}
+.iconBus{background-position:0 -54px}
+.iconSchool{background-position:0 -85px}
+.iconXQ,.iconMap,.iconPrice,.iconAdress,.iconPerson{background:url(images/icon16.gif) 0 0 no-repeat;display:inline-block;padding-left:18px}
+.iconMap{ background-position:0 -59px;padding-left:18px}
+.iconPrice{ background-position:0 -30px}
+.iconAdress{ background-position:0 -86px}
+.iconPerson{ background-position:0 -120px; padding-left:22px}
+.iconImg{ background:url(images/iconImg.gif) right top no-repeat; padding-right:20px}
+/*search*/
+.search .searchMenu{ height:36px; border-left:1px solid #ccc; position:relative}
+.search .searchMenu li{height:36px;padding:0 25px;font:normal 14px/36px 'Microsoft YaHei';background:url(images/searchMenuBg.gif) 0 0 repeat-x;border-right:1px solid #ccc; float:left; cursor:pointer;}
+.search .searchMenu li:hover{ background:url(images/searchMenuBg.gif) 0 -72px repeat-x;}
+.search .searchMenu .liOn{ background-position:0 -36px; font-weight:bold}
+.search .searchMenu .liOn:hover{background:url(images/searchMenuBg.gif) 0 -36px repeat-x;}
+.search .con{ width:998px;margin-top:-1px; border:1px solid #ccc;}
+.search .con .input{width:567px; height:40px; padding:0 10px; font:normal 12px/40px SimSun; border:0; background:url(images/searchBg01.gif) 0 0 no-repeat; float:left}
+.search .con .btnSearch{ width:77px; height:40px; padding-left:60px; font:normal 16px/40px  'Microsoft YaHei'; color:#fff; background:url(images/searchBg01.gif) right 0 no-repeat; float:left}
+.search .con .quxian{width:950px}
+.search .con .quxian .type{width:38px;float:left}
+.search .con .quxian .qxName{width:912px;float:right; position:relative}
+.search .con .quxian .qxName a{ height:33px; margin-right:13px;*margin-right:11px; display:inline-block;}
+.search .con .quxian .qxName a.selected{background:url(images/selectedArrow.gif) center bottom no-repeat;font-weight:bold}
+.search .con .shangQuan{ width:946px; margin-top:-1px; *margin-top:-2px; padding-bottom:10px;float:left;overflow:hidden;*zoom:1}
+.search .con .shangQuan .top,.search .con .shangQuan .bottom{height:6px; line-height:0; font-size:0; background:url(images/sqTop.gif) no-repeat; overflow:hidden}
+.search .con .shangQuan .bottom{ background:url(images/sqBottom.gif) no-repeat}
+.search .con .shangQuan .contain{ width:935px;padding:0 2px 0 7px; border-left:1px solid #ff7a22; border-right:1px solid #ff7a22;}
+.search .con .shangQuan .contain a{ margin:2px 8px; display:inline-block}
+.search .con .info li{ width:950px; margin-bottom:13px}
+.search .con .info li a{ margin-right:12px}
+.search .con .info .inputSmall{width:35px;padding:2px 5px 2px; margin:0 5px;vertical-align:middle;border:1px solid #ccc; background:#fff; color:#b8b8b8}
+.search .con .info .btnSmall{border:1px solid #ccc; width:50px;background:#f7f7f7;cursor:pointer;line-height:19px; *line-height:20px;height:20px;}
+/*moresearchinfo*/
+.moresearchinfo{ width:973px;padding:10px 0 10px 25px; border-top:1px solid #ccc; background:#f5f5f5;left:0;z-index:1000;}
+#selectbox .select_box{width:83px;height:25px;}
+#selectbox div.tag_select,#selectbox div.tag_select_hover,#selectbox div.tag_select_open{display:block;width:60px;height:25px;line-height:25px;font-size:12px;background:url(images/searchbj.gif) no-repeat 0 -102px;padding:0 20px 0 3px;}
+#selectbox div.tag_select_hover,#selectbox div.tag_select_open{background-position:0 -128px;}
+#selectbox ul.tag_options{ margin-top:-1px; mlist-style:none;border:1px solid #bdbdbd; border-top:none;width:81px;background:#fff;}
+#selectbox ul.tag_options li{display:block;width:70px;padding:0 8px;height:22px;text-decoration:none;line-height:22px;}
+#selectbox ul.tag_options li.open_hover{ background:#E6F1FA;}
+#selectbox ul.tag_options li.open_selected{ background:#E6F1FA;}
+#selectpx .select_box{width:118px;height:25px;}
+#selectpx div.tag_select,#selectpx div.tag_select_hover,#selectpx div.tag_select_open{display:block;width:91px;height:25px;line-height:25px;font-size:12px;background:url(images/searchbj.gif) no-repeat 0 -50px;padding:0 20px 0 7px;}
+#selectpx div.tag_select_hover,#selectpx div.tag_select_open{background-position:0 -76px;}
+#selectpx ul.tag_options{ margin-top:-1px; mlist-style:none;border:1px solid #bdbdbd; border-top:none;width:116px;background:#fff;}
+#selectpx ul.tag_options li{display:block;width:100px;padding:0 8px;height:22px;text-decoration:none;line-height:22px;}
+#selectpx ul.tag_options li.open_hover{background:#E6F1FA;}
+#selectpx ul.tag_options li.open_selected{background:#E6F1FA;}
+/*village*/
+.village{height:70px; background:url(images/bk.gif) 0 -917px repeat-x; position:relative; z-index:1}
+.villagebg{ background:url(images/bk.gif) right -844px no-repeat}
+.village dl{ height:50px;background:url(images/bk.gif) 0 -773px no-repeat;padding:10px 15px}
+.village dt {height:23px;overflow:hidden;}
+.village dt a{ font-size:14px; font-weight:700}
+.village dd .blue a{ margin-left:10px; display:inline}
+/*wangdian logo*/
+.logostyle01{ width:215px; height:70px; background:#011597;right:0; top:0; position:absolute}
+.logostyle01 .info01{ width:142px;padding-top:25px; text-align:center; background:url(images/info02-bg.png) top center no-repeat; color:#fff; float:right;}
+.logostyle01 .info01 .name{ font:bold 16px/18px 'Microsoft YaHei';}
+.logostyle01 .info01 .MDtel{ font:normal 10px/12px  Arial; -webkit-text-size-adjust:none; margin-top:7px;}
+.logostyle01 .info01 .MDtel span{background:url(images/icon_tel02.png) 0 0 no-repeat;padding-left:10px;}
+.logostyle01 .info02{ width:146px;text-align:center;color:#fff; float:right;}
+.logostyle01 .info02 .name{ font:bold 16px/35px 'Microsoft YaHei';}
+.logostyle01 .info02 .MDlogo img{ width:146px; height:32px; overflow:hidden; float:right;}
+.logostyle01 .layertop{ width:215px; height:70px; top:0; left:0;position:absolute; background:url(images/layertop215-70.png) no-repeat; _background:url(images/layertop215-70.gif) no-repeat; cursor:pointer; z-index:3}
+/*listbox*/
+.listBox{ width:775px}
+/*menu*/
+.menu{ height:35px}
+.menu,.menu li,.menu li:hover,.menu .liOn,.menu .liOn:hover{background:url(images/menuBg.gif) 0 0 repeat-x}
+.menu li{height:33px; font:normal 14px/33px 'Microsoft YaHei';border-right:1px solid #cbcbcb; padding:0 25px;background-position:0 -35px;float:left}
+.menu li:hover{ background-position:0 -144px}
+.menu .liOn{height:35px;border-left:2px solid #0877d3;border-right:2px solid #0877d3;background-position:0 -70px}
+.menu .liOn:hover{background-position:0 -70px}
+.menu .liFirst{border-left:1px solid #cbcbcb}
+.menu .other{background:none;text-align:right;font:normal 12px/33px SinSum;border:none;background:none;padding:0;float:right}
+.menu li.other:hover{ background:none}
+.menu a:hover{ color:#333; text-decoration:none}
+/*page*/
+.btnLeft,.btnRight,.btnLeftNone,.btnRightNone{ width:17px; height:17px; background:url(images/btnPage.gif) 0 0 no-repeat; display:inline-block;*zoom:1}
+.btnLeftNone{background-position:0 -20px}
+.btnRight{background-position:-22px 0}
+.btnRightNone{background-position:-22px -20px}
+/*updown*/
+.updown{height:32px; padding:7px 0 0 10px; background:url(images/menuBg.gif) 0 -105px repeat-x}
+.updown span{width:46px;height:24px;padding-left:7px;margin-left:10px;line-height:24px;background:url(images/rank_down.gif) no-repeat;display:inline;float:left;cursor:pointer}
+.updown .rank2{background-image:url(images/rank_up.gif)}
+.updown .rank2{background-image:url(images/rank_2.gif)}
+.updown .rank3{background-image:url(images/rank_3.gif)}
+/*houseList*/
+.houseList .list{width:775px;padding:20px 0;border-bottom:1px dotted #ccc; float:left}
+.houseList .list .img img{ width:180px; height:135px; overflow:hidden}
+.houseList .list .img .txtBg{ width:50px; height:24px;top:111px; left:0; background:#000;opacity:0.4;filter:Alpha(opacity=40); position:absolute}
+.houseList .list .img .txt{ font:normal 12px/24px SinSun; color:#fff;top:111px; left:8px; position:absolute}
+.houseList .list .info{ width:575px}
+.houseList .list .title{ font-size:16px; font-family:'Microsoft YaHei';}
+.houseList .list .info .moreInfo{right:15px;top:30px;position:absolute}
+.price{font:bold 29px/30px Arial; color:#ff6a0d; padding-right:4px}
+.houseType{ padding-top:7px; border-top:1px dotted #c2c2c2; font:normal 14px/16px 'Microsoft YaHei';  color:#afafaf}
+.houseType .ispay{ color:#333333;}
+.houseType .nopay{color:Gray;}
+.houseType a:hover{ text-decoration:none; color:#05b;}
+/*map*/
+.showMap .rentmap{ display:block; z-index:1000;}
+.hiddenMap .rentmap{ display:none}
+.rentmap{width:215px; height:270px; top:0; *top:-22px; right:-218px;border:1px solid #cfcfcf;position:absolute}
+.rentmap .arrow{ width:9px; height:175px; top:0; left:-9px;position:absolute}
+.rentmap .iconClose{ width:17px; height:17px; top:10px; right:10px; position:absolute}
+.rentmap .pic img{ width:215px; height:270px}
+/*fanye*/
+.fanye{padding:30px 0 20px;text-align:center}
+.fanye a,.fanye .txt{ height:34px; padding:0 15px; margin:0 7px;font-family:'Microsoft YaHei';line-height:34px;border:1px solid #c8c8c8; background:url(images/pageBg.gif) repeat-x;border-radius:2px; display:inline-block;*zoom:1; overflow:hidden;}
+.fanye a:hover{ text-decoration:none}
+.fanye .pageNow{ background:#ff8006;border:1px solid #ff8006; font-weight:bold; color:#fff}
+.fanye .pageNow:hover{ color:#fff}
+.fanye .txt{ padding:0; background:none; border:none;}
+/*note*/
+.colorGreen{background:#ecffec;border:1px solid #93c993}
+.colorRed{background:#fff1ef;border:1px solid #f0aa9e}
+.colorBlue{background:#f0f5ff;border:1px solid #98b5e9}
+.note{height:20px;margin-right:5px;padding:0 5px;color:#666;font:12px/20px SimSun;font:12px/22px SimSun\9;display:inline-block;*zoom:1; overflow:hidden}
+/*sidebar*/
+.sidebar{ width:212px;}
+.sidebarBox{padding:0 10px 10px;border:1px solid #ccc}
+.sidebarBox .title{ height:34px; font:normal 12px/34px SimSun; border-bottom:1px dotted #ccc}
+.sidebarBox .info li{ line-height:28px;height:28px;}
+.sidebarBox .info li.mouseover{ line-height:28px;overflow:hidden; display:inline-block;width:187px; height:28px; padding-right:3px;}
+.sidebarBox .info li.mouseover:hover{background:#F2F2F2; cursor:pointer;}
+
+.sidebarBox .info .wid125{ width:125px; height:28px; overflow:hidden}
+.label{margin:0 6px 0 0; *margin:0 2px 0 0}
+.lable input{vertical-align:middle}
+
+.search .con .info .inputSmall_01 {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    color: #B8B8B8;
+    margin: 0 5px;
+    padding: 4px 0 3px;
+    text-align: center;
+    vertical-align: middle;
+    width: 30px;
+}
+.schoolcard {
+    background: url("images/iconDot.jpg") repeat-x scroll 0 bottom rgba(0, 0, 0, 0);
+    height: 118px;
+    margin: 0 auto 10px;
+    overflow: hidden;
+    padding: 10px 10px 0;
+    width: 960px;
+}
+.schoolcard .pic img {
+    height: 105px;
+    width: 140px;
+}
+.schoolcard .house {
+    line-height: 26px;
+    padding-left: 15px;
+    width: 800px;
+}
+.schoolcard .housetitle {
+    font: bold 14px/26px 'Microsoft YaHei';
+}
+.schoolcard .iconList {
+    background: url("images/iconList.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    padding-left: 20px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.schoolList .list {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-bottom: 1px dotted #CCCCCC;
+    clear: both;
+    display: block;
+    padding: 20px 0;
+}
+.schoolList .list .img img {
+    height: 105px;
+    overflow: hidden;
+    width: 140px;
+}
+.schoolList .list .img .txtBg {
+    background: none repeat scroll 0 0 #000000;
+    height: 24px;
+    left: 0;
+    opacity: 0.4;
+    position: absolute;
+    top: 80px;
+    width: 50px;
+}
+.schoolList .list .img .txt {
+    color: #FFFFFF;
+    font: 12px/24px SinSun;
+    left: 8px;
+    position: absolute;
+    top: 80px;
+}
+.schoolList .list .info {
+    padding-left: 15px;
+    width: 350px;
+}
+.schoolList .list .title {
+    font-family: 'Microsoft YaHei';
+    font-size: 16px;
+}
+.schoolList .list .infoList {
+    line-height: 28px;
+    padding-left: 15px;
+    width: 240px;
+}
+.infoList .txt {
+    float: left;
+    width: 150px;
+}
+.infoList .jiage {
+    float: right;
+    text-align: right;
+    width: 80px;
+}
+.qiuzuUpDown {
+    background: none repeat scroll 0 0 #F5F5F5;
+    border: 1px solid #CCCCCC;
+}
+.rentList .list {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-bottom: 1px dotted #CCCCCC;
+    clear: both;
+    display: block;
+    padding: 20px 0;
+}
+.rentList .list .img img {
+    height: 58px;
+    overflow: hidden;
+    width: 58px;
+}
+.rentList .list .info {
+    padding-left: 15px;
+    width: 690px;
+}
+.rentList .list .title {
+    font-family: 'Microsoft YaHei';
+    font-size: 16px;
+}
+.rentList .list .info .moreInfo {
+    position: absolute;
+    right: 50px;
+    top: 25px;
+}
+.tjHouseList {
+    padding: 15px 0 0 6px;
+}
+.tjHouseList dt img {
+    height: 135px;
+    overflow: hidden;
+    width: 180px;
+}
+.tjHouseList dd {
+    line-height: 22px;
+    padding-top: 2px;
+}
+
+.feture
+{
+    background-image:url("images/icon-school_s1.jpg");
+    background-repeat:no-repeat;
+    padding-left: 13px;
+    padding-right: 10px;
+}
+
+.bianjituijian {
+    background: url("images/icon_tuijian.gif") no-repeat scroll 15px 3px rgba(0, 0, 0, 0);
+    margin-bottom: 10px;
+    padding-left: 35px;
+    margin-top:10px;
+}
+
+.bianjituijian span {
+    margin-right: 5px;
+}
+
+.bianjituijian a {
+    margin-right: 10px;
+}
+.icon_map_red {
+    background: url("images/icon_map_red.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    padding-left: 12px;
+}
+
+.columncenter {
+    border: 1px solid #CCCCCC;
+    padding: 0 10px 10px;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+.column dt {
+    height: 34px;
+font: normal 12px/34px SimSun;
+border-bottom: 1px dotted #ccc;
+}
+
+.column .pic img {
+width: 180px;
+height: 135px;
+overflow: hidden;
+}
+
+.column .zhuanjia .detail {
+    float: left;
+    margin: 5px 9px 0 5px;
+    position: relative;
+    text-align: center;
+    width: 80px;
+}
+
+.picboxfxf h2 a {
+    color: #0053DF;
+    float: left;
+    font: bold 12px/18px "����";
+    padding: 3px 0;
+    width: 180px;
+}
+
+.columncenterfxf {
+     border: 1px solid #CCCCCC;
+    padding: 0 10px 10px;
+    overflow: hidden;
+}
+.wid80r {
+    text-align: right;
+    width: 80px;
+}
+.wid95r {
+    float: right;
+    width: 95px;
+}
+
+.picboxfxf {
+   padding: 15px 0 0 6px
+}
+.picboxfxf dd {
+    line-height: 22px;
+padding-top: 2px;
+}
+.pricenum {
+    font: bold 17px/20px Verdana;
+    padding-right: 1px;
+}
+.shangQuan dd {
+    float: left;
+    height: 150px;
+    line-height: 15px;
+    margin-right: 10px;
+    width: 20px;
+}
+
+.searchNone {
+    background: none repeat scroll 0 0 #F5F5F5;
+    border: 1px solid #CCCCCC;
+    font: bold 14px/32px 'Microsoft YaHei';
+    height: 32px;
+    padding: 3px 10px;
+}
+
+
+.saveinfo {
+    background: url("images/icon-save0709_17.gif") no-repeat scroll 1px 2px rgba(0, 0, 0, 0);
+    display: inline-block;
+    line-height: 16px;
+    margin-bottom: 6px;
+    padding-left: 16px;
+    width: 180px;
+}
+ .gray {
+    color: #85898A;
+}
+.clearcont {
+    background: url("images/icon-g0709_19.gif") no-repeat scroll 0 5px rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 20px;
+    padding: 5px 0 0 25px;
+    width: 55px;
+}
+
+ .selestfinds a, .selestfinds a:hover {
+    background: url("images/icon-close0709_15.gif") no-repeat scroll right 6px #FFFFFF;
+    border: 1px solid #CCCCCC;
+    color: #333333;
+    display: inline-block;
+    height: 19px;
+    line-height: 19px;
+    margin: 0 12px 5px 0;
+    padding: 2px 20px 1px 6px;
+}
+.searchcondition{ width:973px;padding:10px 0 10px 25px; border-top:1px solid #ccc; background:#f5f5f5;left:0;}
+
+.mid {
+    border: 1px solid #F2A179;
+    display: block;
+    margin-left: 2px;
+    margin-top: 1px;
+    width: 585px;
+}
+.searchNoInfoR {
+    float: left;
+    padding-left: 15px;
+    width: 500px;
+}
+
+.rpinfo{width:750px; padding-left:10px;}
+.rpinfo .moreInfo{right:15px;top:10px;position:absolute}
+
+.links {
+    border: 1px solid #CCCCCC;
+    font-family: "����";
+    margin: 10px auto;
+    width: 1000px;
+}
+
+.links dt {
+    background-color: #F5F5F5;
+    border-bottom: 1px solid #DDDDDD;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 10px;
+}
+
+.links ul {
+    padding: 5px;
+}
+
+.links li a { line-height: 24px;padding: 0 20px 0 10px;display:inline-block }
+
+.sqindex {
+    clear: both;
+    font: 12px/20px Arial;
+    margin: 10px auto;
+    width: 1000px;
+}
+.sqindex dl {
+    float: left;
+    height: 21px;
+    width: 1000px;
+}
+.sqindex dt {
+    float: left;
+    margin: 0 5px;
+}
+.sqindex dd {  
+    border-style: solid solid none;
+    border-width: 1px 1px medium;
+    cursor: pointer;
+    float: left;
+    height: 20px;
+    margin-right: 5px;
+    padding: 0 10px;
+    border-color:#ccc;
+}
+.sqindex .hover {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    float: left;
+    margin-bottom: -1px;
+    position: relative;
+}
+.sqindex .content {
+    border: 1px solid #CCCCCC;
+    float: left;
+    height: 60px;
+    overflow: hidden;
+    padding: 6px 10px;
+    width: 980px;
+}
+.sqindex .content a {
+    float: left;
+    line-height: 21px;
+    margin-right: 20px;
+    white-space: nowrap;
+}
+
+.otherlinks {
+    border: 1px solid #CCCCCC;
+    margin: 10px auto;
+    overflow: hidden;
+    padding: 8px;
+    width: 984px;
+}
+
+.otherlinks a {
+    float:left;
+    line-height:24px;
+    padding:0 20px 0 10px;
+}
+
+.duanzu dd {
+width: 80px;
+padding-right: 0px;
+float: right;
+}
+.duanzu dt {
+width: 100px;
+padding: 0 0 0 10px;
+margin: 0;
+line-height: 1;
+background: none;
+float: left;
+}
+.duanzu dl {
+padding-top: 5px;
+overflow: hidden;
+}
+.duanzu dt img {
+width: 100px;
+height: 75px;
+overflow: hidden;
+}
+.finder{padding:11px 25px 0; line-height:22px;background:#f4f4f4;}
+.finder a.term{ height:17px; margin:0 15px 10px 0; padding:0 22px 0 6px; color:#545454; line-height:17px;background:#fff url("images/icoCloseArrow.gif") right 0 no-repeat; border:1px solid #ffb180; display:inline-block; text-decoration:none;}
+.finder a.term:hover{ color:#666; background-position:right -17px;border:1px solid #ff6a0d;}
+.saveinfo{padding-left:18px;margin:0 10px 10px 0; background: url("images/icon-save0709_17.gif") 1px 4px no-repeat;display: inline-block }
+.clearcont{padding:0 0 0 22px; margin-bottom:10px;background: url("images/icon-g0709_19.gif") 0px 3px no-repeat;display:inline-block;cursor:pointer}
+
+/*****************20140617������ʽ��Ȧ����css********************/
+.sprank_list{float:left;display:block;color:#FFF;width:15px; height:15px; line-height:15px; margin-right:10px; margin-top:6px; text-align:center; overflow:hidden}
+.sprankred{background:#ff6a0d;}
+.sprankgray{background:#adadad;}
+.morelist{width:189px; height:22px;line-height:22px;background:#f9f9f9; color:#999; margin-top:7px; text-align:center;cursor:pointer }
+.morelist a{ color:#999;}
+.morelist a:hover,.morelist:hover{background:#f1f1f1; color:#666; text-decoration:none;}
+/*20150617��ʽ����*/
+.links {border: 1px solid #dddccc; font-family: "΢���ź�"; margin: 10px auto; width: 1000px;}
+.links dt { background-color: #f5f5f5; border-bottom: 1px solid #dddddd; height: 28px; line-height: 28px; padding: 0 10px;}
+.links ul { padding: 5px;}
+.links li a { display: inline-block;  line-height: 24px;  padding: 0 20px 0 10px;}

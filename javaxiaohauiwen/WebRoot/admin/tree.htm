@@ -1,0 +1,130 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>树形菜单</title>
+<script type="text/javascript">
+//定义菜单变量、子菜单变量、菜单图标
+var  menu,subMenus,menuIcon;
+function initiate(){
+
+  menu=document.getElementById("containerul").getElementsByTagName("li");
+
+	for(var i=0;i<menu.length;i++){
+		subMenus=menu[i].getElementsByTagName("ul");
+		if(subMenus.length>0)
+		{
+			menuIcon= document.createElement("span");
+      		menuIcon.className= "symbols";
+      		menuIcon.style.backgroundImage	= "url(Images/plus.png)";
+      		menuIcon.onclick=function(){
+        	showhide(this.parentNode);
+     	         }
+			menu[i].insertBefore(menuIcon, menu[i].firstChild)
+			subMenus[0].style.display = "none";
+		}else
+		{
+			menuIcon= document.createElement("span");
+      		menuIcon.className= "symbols";
+      		menuIcon.style.backgroundImage	= "url(Images/page.png)";
+			menu[i].insertBefore(menuIcon,menu[i].firstChild);
+		}
+	}
+}
+
+
+function showhide(el){
+
+  el.getElementsByTagName("ul")[0].style.display=(el.getElementsByTagName("ul")[0].style.display=="block")?"none":"block";
+
+  el.getElementsByTagName("span")[0].style.backgroundImage=(el.getElementsByTagName("ul")[0].style.display=="block")?"url(Images/minus.png)":"url(Images/plus.png)";
+
+}
+window.onload=initiate;
+</script>
+
+<style type="text/css"><!--
+
+#containerul, #containerul ul{
+  text-align:left;
+  margin:0;				
+  padding:0;
+  cursor:pointer;			
+}
+#containerul ul a{
+	text-decoration:none;
+}
+#containerul li{
+  margin:0 0 0 30px;
+  padding:0;		
+  list-style-type:none;
+}
+#containerul .symbols{
+  float:left;
+  width:12px;
+  height:1em;
+  background-position:0 50%;
+  background-repeat:no-repeat;
+}
+--></style>
+</head>
+
+<body>
+<ul id="containerul">
+  <li> 客户管理
+    <ul>
+      <li> <a href="#">显示客户信息</a> 
+      </li>
+      <li>
+        <a href="#">添加客户信息</a>
+      </li>
+    
+    </ul>
+  </li>
+  <li>订单管理
+    <ul>
+      <li>
+        <a href="#">显示所有订单</a>
+      </li>
+      <li>
+        <a href="#">添加订信息</a>
+      </li>
+      <li>
+        <a href="#">查看待审订单</a>
+      </li>
+      <li>
+        <a href="#">查看已审订单</a>
+      </li>
+    </ul>
+  </li>
+  <li>销售管理
+    <ul>
+      <li>
+        <a href="#">查看销售记录</a>
+      </li>
+      <li>
+        <a href="#">销售统计报表</a>
+      </li>
+        <li>
+        <a href="#">销售分析</a>
+      </li>
+    </ul>
+  </li>
+    <li>商品管理
+    <ul>
+      <li>
+        <a href="#">添加商品信息</a>
+      </li>
+      <li>
+        <a href="#">查看所有商品</a>
+      </li>
+      
+    </ul>
+  </li>
+
+</ul>
+
+<p>
+</p>
+</body>
+</html>

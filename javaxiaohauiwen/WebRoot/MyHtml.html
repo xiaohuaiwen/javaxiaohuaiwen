@@ -1,0 +1,740 @@
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" charset=utf-8 />
+    <link rel="dns-prefetch" href="//static.soufunimg.com">
+    <link rel="dns-prefetch" href="//captcha.fang.com">
+    <link rel="dns-prefetch" href="//countpvn.3g.fang.com">
+    <title>搜房网-注册</title>
+    
+    <link rel="stylesheet" type="text/css" href="https://static.soufunimg.com/passport/pccss/common.css?66" />
+    <link rel="stylesheet" type="text/css" href="https://static.soufunimg.com/passport/pccss/css1.css?66" />
+    <link rel="stylesheet" type="text/css" href="https://static.soufunimg.com/passport/pccss/css.css?66"/>
+    <link rel="stylesheet" type="text/css" href="https://static.soufunimg.com/passport/pccss/CSS_F3.css?66" />
+    <link rel="stylesheet" type="text/css" href="https://static.soufunimg.com/passport/pccss/css400.css?66" />
+
+    <script src="https://static.soufunimg.com/passport/commonjs/jquery-1.4.2.min.js"></script>
+    <script src="https://static.soufunimg.com/passport/pcjs/nav.js?20160229"></script>
+    <script src="https://static.soufunimg.com/passport/pcjs/register_validate.js?v=20160229" charset="gb2312"></script>
+    <script src="https://static.soufunimg.com/passport/pcjs/register.js?v=20160405" charset="gb2312"></script>
+
+    <script src="https://static.soufunimg.com/passport/commonjs/RSA.min.js"></script>
+    <script type="text/javascript">
+        setMaxDigits(129);
+        var key_to_encode = new RSAKeyPair("010001", "", "978C0A92D2173439707498F0944AA476B1B62595877DD6FA87F6E2AC6DCB3D0BF0B82857439C99B5091192BC134889DFF60C562EC54EFBA4FF2F9D55ADBCCEA4A2FBA80CB398ED501280A007C83AF30C3D1A142D6133C63012B90AB26AC60C898FB66EDC3192C3EC4FF66925A64003B72496099F4F09A9FB72A2CF9E4D770C41");
+        var query = 'https://passport.fang.com';
+        jQuery(function () {
+            jQuery("#strUsername").focus();
+            jQuery("#strVcode").attr("disabled", true);
+            //城市展示代码
+            jQuery(document.body).click(function (e) {
+                if (jQuery(e.target).closest("#event_citybox,#event_city_input").size() == 0) {
+                    jQuery("#event_citytab a").first().mouseover();
+                    jQuery("#event_citybox").hide();
+                }
+            });
+            jQuery("#event_city_input").click(function () {
+                jQuery("#event_citytab a").first().mouseover();
+                jQuery("#event_citytab a").first().addClass("on");
+                jQuery("#event_citybox").show();
+            });
+            jQuery("#event_citytab a").mouseover(function (e) {
+                jQuery(".event_citylist").hide();
+                jQuery("#event_citytab a").removeClass("on");
+                var target = jQuery(".event_citylist[letter='" + e.target.innerHTML + "']");
+                jQuery(this).addClass("on");
+                target.show();
+            });
+            jQuery(".event_citylist a").click(function () {
+                jQuery("#event_city_input").val(jQuery(this).text());
+                jQuery("#event_citybox").hide();
+                jQuery("#div_event_city_input").hide();//隐藏‘请选择传城市’
+                iscodevalid = true;
+            });
+            jQuery("#strUsername").val("");
+            jQuery("#strPassword").val("");
+            if ("襄阳" != "") {
+                jQuery("#event_city_input").val("襄阳");
+            }
+            jQuery("#show400info").click(function () {
+                jQuery("#detailinfo").css("display", "block");
+                jQuery(".main").css("height", "650px");
+                jQuery("#soufunCardRegion").css("margin-top", "170px");
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <!--顶部 begin-->
+<link href="//static.soufunimg.com/navigation/style/navigation20141112.css" rel="stylesheet" type="text/css" />
+<!-- 新导航0903 begin -->
+<div class="newnav20141104">
+	<div class="newnav20141104nr">
+		<div class="s1"><a href="http://www.fang.com/"><img src="//static.soufunimg.com/navigation/images/navlogo.gif"></a></div>
+		<div class="s2"  onMouseOver="this.className='s2 on2014'" onMouseOut="this.className='s2'" id="dsy_H01_01">
+				<div class="s4Box"><a href="#">北京<img src="//static.soufunimg.com/navigation/images/navicon.gif" ></a></div>
+				<div  class="city20141104" >
+                  <!--city_list_start-->
+                <!--tab_header_start-->
+				<div class="city20141104hd">
+					<div class="city1" >热门城市</div>
+					<div class="city2">ABCDFGH</div>
+					<div class="city2" >JKLMNQST</div>
+					<div class="city2" >WXYZ</div>
+                    <!--more_tab-->
+			    </div>
+            	<!--tab_header_end-->
+				<div class="city20141104nr" id="cityi010">
+                <!--tab1_content_start-->
+                    <a target="_self" href="http://www1.fang.com/">全国</a>
+                    <a target="_self" href="http://www.fang.com/">北京</a>
+                    <a target="_self" href="http://sh.fang.com/">上海</a>
+                    <a target="_self" href="http://gz.fang.com/">广州</a>
+                    <a target="_self" href="http://sz.fang.com/">深圳</a>
+                    <a target="_self" href="http://cd.fang.com/">成都</a>
+                    <a target="_self" href="http://cq.fang.com/">重庆</a>
+                    <a target="_self" href="http://tj.fang.com/">天津</a>
+                    <a target="_self" href="http://wuhan.fang.com/">武汉</a>
+                    <a target="_self" href="http://hz.fang.com/">杭州</a>
+                    <a target="_self" href="http://nanjing.fang.com/">南京</a>
+                    <a target="_self" href="http://suzhou.fang.com/">苏州</a>	
+                    <a target="_self" href="http://jn.fang.com/">济南</a>
+                    <a target="_self" href="http://sjz.fang.com/">石家庄</a>
+                    <a target="_self" href="http://xian.fang.com/">西安</a>
+                    <a target="_self" href="http://zz.fang.com/">郑州</a>
+                    <a target="_self" href="http://wuxi.fang.com/">无锡</a>
+                    <a target="_self" href="http://qd.fang.com/">青岛</a>
+                    <a target="_self" href="http://nc.fang.com/">南昌</a>
+                    <a target="_self" href="http://dg.fang.com/">东莞</a>
+                    <a target="_self" href="http://dl.fang.com/">大连</a>
+                    <a target="_self" href="http://km.fang.com/">昆明</a>
+                    <a target="_self" href="http://hn.fang.com/" >海南</a>
+                    <a target="_self" href="http://sanya.fang.com/" >三亚</a>
+                   	<a href="http://www.hkproperty.com/" target="_blank">香港</a>
+																				<a target="_self" href="http://world.fang.com/" >海外</a>
+																					<a href="http://fang.com/SoufunFamily.htm" target="_blank">377城市</a>
+				<!--tab1_content_end-->
+                </div>
+				<div class="city20141104nr" id="cityi011"  style="display:none">
+                <!--tab2_content_start-->
+                    <a target="_self" href="http://anshan.fang.com/">鞍山</a>
+                    <a target="_self" href="http://www.fang.com/">北京</a>
+                    <a target="_self" href="http://bd.fang.com/">保定</a>
+                    <a target="_self" href="http://bt.fang.com/">包头</a>
+                    <a target="_self" href="http://bengbu.fang.com/">蚌埠</a>
+                    <a target="_self" href="http://bh.fang.com/">北海</a>
+                    <a target="_self" href="http://changchun.fang.com/">长春</a>
+                    <a target="_self" href="http://cd.fang.com/">成都</a>
+                    <a target="_self" href="http://cq.fang.com/">重庆</a>
+                    <a target="_self" href="http://cs.fang.com/">长沙</a>
+                    <a target="_self" href="http://cz.fang.com/">常州</a>
+                    <a target="_self" href="http://dl.fang.com/">大连</a>
+                    <a target="_self" href="http://dg.fang.com/">东莞</a>
+                    <a target="_self" href="http://daqing.fang.com/">大庆</a>
+                    <a target="_self" href="http://fs.fang.com/">佛山</a>
+                    <a target="_self" href="http://fz.fang.com/">福州</a>
+                    <a target="_self" href="http://gz.fang.com/">广州</a>
+                    <a target="_self" href="http://ganzhou.fang.com/">赣州</a>
+                    <a target="_self" href="http://gy.fang.com/">贵阳</a>
+                    <a target="_self" href="http://guilin.fang.com/">桂林</a>
+                    <a target="_self" href="http://hz.fang.com/">杭州</a>
+                    <a target="_self" href="http://hs.fang.com/">衡水</a>
+                    <a target="_self" href="http://nm.fang.com/">呼和浩特</a>
+                    <a target="_self" href="http://hrb.fang.com/">哈尔滨</a>
+                    <a target="_self" href="http://hd.fang.com/">邯郸</a>
+                    <a target="_self" href="http://huaian.fang.com/">淮安</a>
+                    <a target="_self" href="http://huzhou.fang.com/">湖州</a>
+                    <a target="_self" href="http://hf.fang.com/">合肥</a>
+                    <a target="_self" href="http://huizhou.fang.com/">惠州</a>
+                    <a target="_self" href="http://hengyang.fang.com/">衡阳</a>
+                    <a target="_self" href="http://hn.fang.com/">海南</a>			
+				<!--tab2_content_end-->
+                </div>
+                <div class="city20141104nr" id="cityi012" style="display:none">
+                <!--tab3_content_start-->
+                <a target="_self" href="http://jn.fang.com/">济南</a>
+                <a target="_self" href="http://jining.fang.com/">济宁</a>
+                <a target="_self" href="http://jl.fang.com/">吉林</a>
+                <a target="_self" href="http://jy.fang.com/">江阴</a>
+                <a target="_self" href="http://jx.fang.com/">嘉兴</a>
+                <a target="_self" href="http://jm.fang.com/">江门</a>
+                <a target="_self" href="http://jiujiang.fang.com/">九江</a>
+                <a target="_self" href="http://ks.fang.com/">昆山</a>
+                <a target="_self" href="http://km.fang.com/">昆明</a>
+                <a target="_self" href="http://lc.fang.com/">聊城</a>		
+                <a target="_self" href="http://lf.fang.com/">廊坊</a>		
+                <a target="_self" href="http://linyi.fang.com/">临沂</a>		
+                <a target="_self" href="http://ly.fang.com/">洛阳</a>		
+                <a target="_self" href="http://lyg.fang.com/">连云港</a>		
+                <a target="_self" href="http://lz.fang.com/">兰州</a>		
+                <a target="_self" href="http://liuzhou.fang.com/">柳州</a>		
+                <a target="_self" href="http://leshan.fang.com/">乐山</a>
+                <a target="_self" href="http://mas.fang.com/">马鞍山</a>	
+                <a target="_self" href="http://nanjing.fang.com/">南京</a>		
+                <a target="_self" href="http://nb.fang.com/">宁波</a>		
+                <a target="_self" href="http://nt.fang.com/">南通</a>		
+                <a target="_self" href="http://nc.fang.com/">南昌</a>		
+                <a target="_self" href="http://nn.fang.com/">南宁</a>
+                <a target="_self" href="http://qd.fang.com/">青岛</a>
+                <a target="_self" href="http://qhd.fang.com/">秦皇岛</a>
+                <a target="_self" href="http://qz.fang.com/">泉州</a>
+                <a target="_self" href="http://sy.fang.com/">沈阳</a>		
+                <a target="_self" href="http://sjz.fang.com/">石家庄</a>		
+                <a target="_self" href="http://sh.fang.com/">上海</a>		
+                <a target="_self" href="http://sz.fang.com/">深圳</a>		
+                <a target="_self" href="http://suzhou.fang.com/">苏州</a>		
+                <a target="_self" href="http://sx.fang.com/">绍兴</a>		
+                <a target="_self" href="http://st.fang.com/">汕头</a>		
+                <a target="_self" href="http://sanya.fang.com/">三亚</a>		
+                <a target="_self" href="http://sq.fang.com/">宿迁</a>
+                <a target="_self" href="http://tj.fang.com/">天津</a>	
+                <a target="_self" href="http://ts.fang.com/">唐山</a>	
+                <a target="_self" href="http://taiyuan.fang.com/">太原</a>	
+                <a target="_self" href="http://taizhou.fang.com/">泰州</a>
+                <!--tab3_content_end-->
+                </div>
+                <div class="city20141104nr" id="cityi013" style="display:none">
+                <!--tab4_content_start-->
+                <a target="_self" href="http://wuhan.fang.com/">武汉</a>
+                <a target="_self" href="http://wuxi.fang.com/">无锡</a>
+                <a target="_self" href="http://wf.fang.com/">潍坊</a>
+                <a target="_self" href="http://weihai.fang.com/">威海</a>
+                <a target="_self" href="http://wuhu.fang.com/">芜湖</a>
+                <a target="_self" href="http://xj.fang.com/">乌鲁木齐</a>
+                
+                <a target="_self" href="http://xian.fang.com/">西安</a>
+                <a target="_self" href="http://xz.fang.com/">徐州</a>
+                <a target="_self" href="http://xm.fang.com/">厦门</a>
+                <a target="_self" href="http://xiangyang.fang.com/">襄阳</a>
+                <a target="_self" href="http://xn.fang.com/">西宁</a>
+                <a target="_self" href="http://xt.fang.com/">湘潭</a>
+                <a target="_self" href="http://yt.fang.com/">烟台</a>
+                <a target="_self" href="http://yz.fang.com/">扬州</a>
+                <a target="_self" href="http://yancheng.fang.com/">盐城</a>
+                <a target="_self" href="http://yc.fang.com/">宜昌</a>
+                <a target="_self" href="http://yinchuan.fang.com/">银川</a>
+                <a target="_self" href="http://yueyang.fang.com/">岳阳</a>
+                
+                <a target="_self" href="http://zz.fang.com/">郑州</a>
+                <a target="_self" href="http://zb.fang.com/">淄博</a>
+                <a target="_self" href="http://zhenjiang.fang.com/">镇江</a>
+                <a target="_self" href="http://zhoushan.fang.com/">舟山</a>
+                <a target="_self" href="http://zhangzhou.fang.com/">漳州</a>
+                <a target="_self" href="http://zh.fang.com/">珠海</a>
+                <a target="_self" href="http://zs.fang.com/">中山</a>
+                <a target="_self" href="http://zhuzhou.fang.com/">株洲</a>
+                <!--tab4_content_end-->
+                </div>
+																
+																
+					<!--more_tab_content-->
+                <!--city_list_end-->
+				</div>
+			
+		</div>	
+			<div class="s5" track-id="www1" style="background-image:none" id="dsy_H01_02">
+        	<div class="s4Box"><a href="http://www.fang.com" target="_self">首页</a></div>
+           
+        </div>
+		<div class="s5" track-id="newhouse" id="dsy_H01_03">
+        	<div class="s4Box"><a href="http://newhouse.fang.com/house/s/" target="_self">新房</a></div>
+            <div class="listBox">
+            	<ul>
+                   <li><a style="color:#f00;" target="_self" href="http://newhouse.fang.com/house/s/d21/">知名学校</a></li>
+                   <li><a target="_self" href="http://newhouse.fang.com/house/saledate/%b1%be%d4%c2.htm">本月开盘</a></li>
+                    <li><a target="_self" href="http://newhouse.fang.com/house/asp/trans/buynewhouse/default.htm">热门楼盘</a></li>
+                    <li><a target="_self" href="http://newhouse.fang.com/house/s/b31/">打折楼盘</a></li>
+                    <li><a target="_self" href="http://newhouse.fang.com/house/daogou.htm">楼盘导购</a></li>
+					<li><a target="_self" href="http://v.fang.com/">楼盘视频</a></li>
+					<li><a target="_self" href="http://zhishi.fang.com/xf/">购房知识</a></li>
+					<li><a target="_self" href="http://newhouse.fang.com/house/kanfangtuan.htm">看房团</a></li>
+					<li style="margin-bottom:8px"><a href="http://newhouse.fang.com/entrust/" target="_self"><div class="butstyle20141104">帮你找房</div></a></li>
+                </ul>
+            </div>
+        </div>
+		<div class="s6" track-id="esf" id="dsy_H01_04">
+        	<div class="s4Box">	<a href="http://esf.fang.com/" target="_self">二手房</a></div>
+            <div class="listBox">
+            	<ul>
+                  <li><a target="_self" href="http://esf.fang.com/house/">出售房源</a></li>
+                    <li><a target="_self" href="http://esf.fang.com/house/a21/">佣金0.5%</a></li>
+                    <li><a target="_self" href="http://esf.fang.com/housing/">找小区</a></li>
+                    <li><a target="_self" href="http://esf.fang.com/agenthome/">找经纪人</a></li>
+                    <li><a target="_self" href="http://esf.fang.com/villa/">找别墅</a></li>
+                    <li><a target="_self" href="http://zhishi.fang.com/esf/">购房知识</a></li>
+                    <li><a target="_self" href="http://esf.fang.com/newsecond/news/">二手房导购</a></li>
+					<li style="margin-bottom:8px"><a href="http://esf.fang.com/newsecond/NonameSale/checkinhouse.aspx" target="_self"><div class="butstyle20141104">我要卖房</div></a></li>
+                </ul>
+            </div>
+        </div>	
+		<div class="s5" track-id="zu" id="dsy_H01_05">
+        	<div class="s4Box"><a href="http://zu.fang.com/" target="_self">租房</a></div>
+            <div class="listBox">
+            	<ul>
+                  	<li><a href="http://zu.fang.com/house/a27/" target="_self">房天下自营</a></li>
+                   <li><a href="http://zu.fang.com/house/a21/" target="_self">个人房源</a></li>
+                    <li><a href="http://zu.fang.com/house/n31/" target="_self">整租房源</a></li>
+                    <li><a href="http://zu.fang.com/hezu/" target="_self">合租房源</a></li>
+					 <li><a href="http://zu.fang.com/villa/" target="_self" rel="nofollow">别墅房源</a></li>
+						<li><a href="http://www.youtx.com/beijing/" target="_self">短租日租</a></li>
+					<li><a href="http://zhishi.fang.com/zf/" target="_self">租房知识</a></li>
+					 <li><a href="http://zu.fang.com/qiuzu/" target="_self" rel="nofollow">求租</a></li>
+                   <li style="margin-bottom:8px"><a href="http://zu.fang.com/rent/rent_info/Rent_Input_Front.aspx" target="_self" rel="nofollow"><div class="butstyle20141104">免费发布出租</div></a></li>
+                </ul>
+            </div>
+        </div>
+		<div class="s6" track-id="fangjia" style="background-image:none" id="dsy_H01_06">
+        	<div class="s4Box"><a href="http://fangjia.fang.com/" target="_self">查房价</a> </div>
+            
+        </div>	
+		<div class="s7" track-id="home" id="dsy_H01_07">
+        	<div class="s4Box"><a href="http://home.fang.com/" target="_self">装修家居</a></div>
+            <div class="listBox">
+            	<ul>
+                  <li><a href="http://home.fang.com/zxbj/#cityid=203&sourceurl=home.fang.com&postion=bj_shouye_1">免费装修报价</a></li>
+                  <li><a href="http://home.fang.com/album/bj/">装修效果图</a></li>
+                  <li><a href="http://zhishi.fang.com/jiaju/">装修攻略</a></li>
+                  <li><a href="http://home.fang.com/news/">家居资讯</a></li>
+                  <li style="margin-bottom:8px"><a href="http://home.fang.com/woyaozhuangxiu/?from=daohang/" target="_self"><div class="butstyle20141104">帮你装修</div></a></li>
+                </ul>
+            </div>
+        </div>
+			<div class="s6" track-id="office" id="dsy_H01_08">
+        	<div class="s4Box"><a href="http://office.fang.com/" target="_self">写字楼</a></div>
+            <div class="listBox">
+            	<ul>
+                     <li><a href="http://office.fang.com/zu/house/" target="_self">写字楼出租</a></li>
+                    <li><a href="http://office.fang.com/shou/house/" target="_self">写字楼出售</a></li>
+                    <li><a href="http://newhouse.fang.com/house/s/list/a75/" target="_self">写字楼新盘</a></li>
+                </ul>
+            </div>
+        </div>					
+				<div class="s5" track-id="shop" id="dsy_H01_09">
+        	<div class="s4Box"><a href="http://shop.fang.com/" target="_self">商铺</a></div>
+            <div class="listBox">
+            	<ul>
+                    <li><a href="http://shop.fang.com/zu/house/" target="_self">商铺出租</a></li>
+                    <li><a href="http://shop.fang.com/shou/house/" target="_self">商铺出售</a></li>
+                    <li><a href="http://newhouse.fang.com/house/s/list/a72/" target="_self">商铺新盘</a></li>
+                </ul>
+            </div>
+        </div>
+						<div class="s7" track-id="8" id="dsy_H01_10">
+        	<div class="s4Box"><a href="http://dai.txdai.com/" target="_self">金融贷款</a></div>
+            <div class="listBox">
+            	<ul> 
+                	
+                	<li><a href="http://dai.txdai.com/esf/Apply/Index.html" target="_self">二手房按揭贷款</a></li>
+                    <li><a href="http://www.txdai.com/" target="_self">投资理财</a></li>
+					<li><a href="http://txdai.com/zhongchou/NewHouseList/Index.html" target="_self">房产众筹</a></li>
+                    <li><a href="http://newhouse.fang.com/house/tools.htm" target="_self">贷款计算器</a></li>
+                </ul>
+            </div>
+        </div>
+		<div class="s5" track-id="fdc" id="dsy_H01_11">
+        	<div class="s4Box"><a href="http://fdc.fang.com/" target="_self">产业</a></div>
+            <div class="listBox">
+            	<ul>
+					<li><a href="http://land.fang.com/">土地</a></li>
+                   <li><a href="http://fdc.fang.com/data/">地产数据</a></li>
+                    <li><a href="http://fdc.fang.com/wenku/">文库报告</a></li>
+                    <li><a href="http://fdc.fang.com/index/BaiChengIndex.html">百城价格指数</a></li>
+                    <li><a href="http://fdc.fang.com/top10/">房企研究</a></li>
+                    <li><a href="http://fdc.fang.com/hr/">地产招聘</a></li>
+                  
+                </ul>
+            </div>
+        </div>
+										<div class="s7" track-id="world" id="dsy_H01_12">
+        	<div class="s4Box"><a href="http://world.fang.com/" target="_self">海外房产</a></div>
+            <div class="listBox">
+            	<ul>
+                 <li><a href="http://us.fang.com/" target="_self">美国房产</a></li>
+                    <li><a href="http://au.fang.com/" target="_self">澳大利亚房产</a></li>
+					<li><a href="http://canada.fang.com/" target="_self">加拿大房产</a></li>
+                    <li><a href="http://japan.fang.com/" target="_self">日本房产</a></li>
+                    <li><a href="http://uk.fang.com/" target="_self">英国房产</a></li>
+					<li><a href="http://www.hkproperty.com/" target="_blank">香港房产</a></li>
+                </ul>
+            </div>
+        </div>
+		<div class="s7" track-id="bbs" id="dsy_H01_13">
+        	<div class="s4Box">	<a href="http://bbs.fang.com/" target="_self">业主论坛</a></div>
+            <div class="listBox">
+            	<ul>
+                  <li><a href="http://bbs.fang.com/index.php?_c=Managerindex&_m=EliteList" target="_self">精华帖</a></li>
+                  <li><a href="http://bbs.fang.com/board/buyer/" target="_self">购房圈</a></li>
+                  <li><a href="http://bbs.fang.com/asp/index/busiActivityMore.aspx" target="_self">业主活动</a></li>
+                  <li><a href="http://home.fang.com/bbs/board/bjzxlt/" target="_self">装修论坛</a></li>
+                </ul>
+            </div>
+        </div>
+		<div class="s7" track-id="news" id="dsy_H01_14">
+        <div class="s4Box"><a href="http://news.fang.com/" target="_self">房产快讯</a></div>
+            <div class="listBox">
+            	<ul>
+                   	<li><a href="http://news.fang.com/gdxw.html">最新快讯</a></li>
+                    <li><a href="http://news.fang.com/gqzt.html">高清组图</a></li>
+                    <li><a href="http://news.fang.com/rdzt.html">热点专题</a></li>
+                    <li><a href="http://news.fang.com/more/32/1.html">市场</a></li>
+					<li><a href="http://news.fang.com/more/35/1.html">政策</a></li>
+					<li><a href="http://zhishi.fang.com/">房产知识</a></li>
+					<li><a href="http://news.fang.com/more/330/1.html">金融</a></li>
+					<li><a href="http://news.fang.com/more/331/1.html">土地</a></li>
+                </ul>
+            </div>
+        </div>
+	<div id="loginBarNew">
+	<div class="s4a" onMouseOver="this.className='s4a on2014'" onMouseOut="this.className='s4a'" style="background-image:none">
+        	<div class="s4Box"><a href="#">注册</a></div>
+        </div>
+	<div class="sline21041104"></div>
+	<div class="s4a" onMouseOver="this.className='s4a on2014'" onMouseOut="this.className='s4a'" style="background-image:none">
+        	<div class="s4Box"><a href="#">登录</a></div>
+        </div>
+	</div>
+		<div class="clear"></div>
+	</div>
+</div>
+<script src="//static.soufunimg.com/navigation/newnav20141111.js"></script>
+<!-- 新导航0903 end  -->
+    <!--顶部 end-->
+    <form id="mobileregister" method="post" style="background: #efefef;">
+
+        <div class="logoBox" style="min-width: 1200px;">
+            <input type="hidden" name="backurl" id="backurl" value="https://passport.fang.com" />
+            <input type="hidden" name="service"  id="service" value="soufun-passport-web" />
+            <input type="hidden" name="host" id="host" value="" />
+            <div class="logo">
+                <a href="#">
+                    <img src="https://static.soufunimg.com/passport/pcimages/logo_03.png" width="161" height="49" /></a>
+            </div>
+            <span class="word">注册通行证</span>
+
+        </div>
+
+        <div class="main" style="height: 612px;">
+            <div class="leftList">
+                <ul class="formList">
+                    <li id="usernameregion" style="position: relative; z-index: 2;">
+                        <label><em class="red">*</em> 用户名：</label><input type="text" id="strUsername" name="strUsername" class="inputStyle" />
+                        <!--用于自动检索用户名下拉-->
+                        <div class="dropdown" id="userDiv" style="display: none;"></div>
+                        <div class="" id="div_strUsername" style="position: absolute; top: 0; left: 62%;"></div>
+                    </li>
+                    <li style="position: relative;">
+                        <label><em class="red">*</em> 请设置密码：</label><input type="password" class="inputStyle" id="strPassword" name="strPassword" />
+                        <div class="" id="div_strPassword" style="position: absolute; top: 0; left: 62%;"></div>
+                    </li>
+                    <li style="position: relative;">
+                        <label><em class="red">*</em> 请确认密码：</label><input type="password" class="inputStyle" id="strPasswordConfirm" name="strPasswordConfirm" />
+                        <div class="" id="div_strPasswordConfirm" style="position: absolute; top: 0; left: 62%;"></div>
+                    </li>
+
+                    <li style="position: relative;">
+                        <label><em class="red">*</em> 手机号码：</label>
+                        <input type="text" class="inputStyle" id="strMobile" name="MobilePhone" maxlength="11" />
+                        <div class="" id="div_strMobile" style="position: absolute; top: 0; left: 62%;"></div>
+                    </li>
+
+                    <li style="position: relative;">
+                        <label><em class="red">*</em> 手机验证码：</label>
+                        <input type="text" class="inputStyle width2" id="strVcode" name="vcode_phone" />
+                        <input type="button" value="获取短信验证码" class="yzmBtn" id="vcode" onclick="return getPhoneCode();" />
+                        <div class="" id="div_strVcode" style="position: absolute; top: 0; left: 62%;"></div>
+                        <!--400免摘机服务页面20150407 begin-->
+                        <div class="plus_b" id="phoneshow" style="position: absolute; top: 0; left: 62%; display: none;">
+                            如果您收不到验证码,可以一分钟后再次点击获取,或者点击<a id="show400info" href="#" style="color: #4fc0e8">这里</a>
+                            <!--鼠标点击这里出现的提示-->
+                            <!--语音验证码出现的提示-->
+                            <div id="detailinfo" class="herenote" style="display: none; z-index: 222;">
+                                <i class="jt_icon"></i>
+                                <p style="height: 39px; line-height: 39px;">
+                                    <span style="float: left">收不到验证码？您可以通过“语音”方式获取验证码，此服务免费。</span><input id="getVoiceCode" type="button" value="点击使用语音获取验证码" onclick="return SendVoiceCode()" class="test_btn" style="margin: 5px 0; padding: 5px; float: left; *margin-left: 4px; *width: 160px; *padding: 0px; *margin-top: 4px;" />
+                                </p>
+                            </div>
+                            <!--发送语音验证码出现的提示-->
+                            <div id="detailinfoTip" class="herenote" style="display: none; z-index: 222;">
+                                <i class="jt_icon"></i>
+                                <p id="tips">
+                                    搜房网向您的手机：<span id="mobileid">159****3312</span>拨打电话并播报验证码。来电号码<span style="color: #cc0000;">010-5854-4536。</span><br />
+                                    <span style="float: left">如果1分钟内没接到语音验证码电话，请点击按钮重新获取。</span><input id="voiceCode" type="button" value="41秒后使用语音获取验证码" class="test_btn" onclick="return SendVoiceCode()" />
+                                </p>
+                            </div>
+                        </div>
+
+                        <!--验证弹出 begin -->
+                        <div class="yzbox2" id="div_mathcode" style="display: none;">
+                            <div class="yzboxa">
+                                <div class="yzboxa01">
+                                    <div class="s1">
+                                        <script type="text/javascript">
+                                            //获取验证码
+                                            var v_rand = Math.round(Math.random() * 10000);
+                                            document.write("<img id='imgcode' name='imgcode' onClick='refresh_code();return false;' style='cursor:pointer;width:70px;height:30px'>");
+
+                                        </script>
+                                    </div>
+                                    <div class="s2">
+                                        <input type="text" value="" maxlength="4" class="yzboxa01inp" id="txt_mathcode" />
+                                        <input type="button" class="yzboxa01but" value="确认" id="btn_mathcode" />
+                                    </div>
+                                </div>
+                                <div class="yzboxa02">
+                                    <div class="s1">
+                                        <a href="javascript:void(0);" onclick="refresh_code();">看不清?</a>
+                                    </div>
+                                    <div class="s2" id="showWord">
+                                        请输入文字
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="yzboxb">
+                            </div>
+                        </div>
+                        <!--验证弹出 end-->
+                    </li>
+
+                    <li id="soufunCardRegion" class="gray9" style="position: relative; margin-top: 36px">
+                        <label></label>
+                        <div class="flol">
+                            <div class="kaBox" onmouseover="this.className='kaBox on'" onmouseout="this.className='kaBox'">
+                                <input type="checkbox" id="reg_card" name="reg_card" />免费开通 <a href="#" class="blue"><span>搜房卡</span>
+                                    <div class="kaOut">
+                                        <span></span>
+                                        <h3 class="blue">关于搜房卡</h3>
+                                        <p>搜房卡是搜房网面向全球网友推出的房产家居生活类服务卡，搜房卡涵盖所有与家相关的服务，持卡会员可享受购房、购买家居、装修、生活配套等全面的会员独家优惠服务。免费参与搜房网举办的各种看房、团购、集采活动。</p>
+                                    </div>
+                                </a>
+                            </div>
+                            选择城市
+                    <div class="seleCityBox">
+                        <input type="text" class="seleStyle" id="event_city_input" name="event_city_input" />
+                        <div class="cityOutBox" id="event_citybox" style="display: none;">
+                            <div class="Citytab" id="event_citytab">
+<a href='javascript:void(0)'>A</a><a href='javascript:void(0)'>B</a><a href='javascript:void(0)'>C</a><a href='javascript:void(0)'>D</a><a href='javascript:void(0)'>E</a><a href='javascript:void(0)'>F</a><a href='javascript:void(0)'>G</a><a href='javascript:void(0)'>H</a><a href='javascript:void(0)'>J</a><a href='javascript:void(0)'>K</a><a href='javascript:void(0)'>L</a><a href='javascript:void(0)'>M</a><a href='javascript:void(0)'>M </a><a href='javascript:void(0)'>N</a><a href='javascript:void(0)'>P</a><a href='javascript:void(0)'>Q</a><a href='javascript:void(0)'>R</a><a href='javascript:void(0)'>S</a><a href='javascript:void(0)'>T</a><a href='javascript:void(0)'>W</a><a href='javascript:void(0)'>X</a><a href='javascript:void(0)'>Y</a><a href='javascript:void(0)'>Z</a>
+                            </div>
+<div class='cityCon event_citylist' letter='A'><a href='javascript:void(0)'>阿克苏</a><a href='javascript:void(0)'>鞍山</a><a href='javascript:void(0)'>安阳</a><a href='javascript:void(0)'>安庆</a><a href='javascript:void(0)'>安顺</a><a href='javascript:void(0)'>澳门</a><a href='javascript:void(0)'>阿坝州</a><a href='javascript:void(0)'>安康</a><a href='javascript:void(0)'>安丘</a><a href='javascript:void(0)'>安达</a><a href='javascript:void(0)'>安宁</a></div><div class='cityCon event_citylist' letter='B'><a href='javascript:void(0)'>北京</a><a href='javascript:void(0)'>宾县</a><a href='javascript:void(0)'>宝应</a><a href='javascript:void(0)'>璧山</a><a href='javascript:void(0)'>博尔塔拉</a><a href='javascript:void(0)'>宾阳</a><a href='javascript:void(0)'>巴彦</a><a href='javascript:void(0)'>博罗</a><a href='javascript:void(0)'>霸州</a><a href='javascript:void(0)'>白城</a><a href='javascript:void(0)'>白山</a><a href='javascript:void(0)'>白银</a><a href='javascript:void(0)'>保山</a><a href='javascript:void(0)'>百色</a><a href='javascript:void(0)'>宝鸡</a><a href='javascript:void(0)'>巴州</a><a href='javascript:void(0)'>亳州</a><a href='javascript:void(0)'>本溪</a><a href='javascript:void(0)'>北海</a><a href='javascript:void(0)'>保定</a><a href='javascript:void(0)'>蚌埠</a><a href='javascript:void(0)'>包头</a><a href='javascript:void(0)'>巴彦淖尔</a><a href='javascript:void(0)'>巴中</a><a href='javascript:void(0)'>毕节</a><a href='javascript:void(0)'>滨州</a></div><div class='cityCon event_citylist' letter='C'><a href='javascript:void(0)'>重庆</a><a href='javascript:void(0)'>成都</a><a href='javascript:void(0)'>常州</a><a href='javascript:void(0)'>长春</a><a href='javascript:void(0)'>长沙</a><a href='javascript:void(0)'>常熟</a><a href='javascript:void(0)'>沧州</a><a href='javascript:void(0)'>滁州</a><a href='javascript:void(0)'>郴州</a><a href='javascript:void(0)'>潮州</a><a href='javascript:void(0)'>赤峰</a><a href='javascript:void(0)'>常德</a><a href='javascript:void(0)'>綦江</a><a href='javascript:void(0)'>承德</a><a href='javascript:void(0)'>朝阳</a><a href='javascript:void(0)'>池州</a><a href='javascript:void(0)'>长治</a><a href='javascript:void(0)'>慈溪</a><a href='javascript:void(0)'>巢湖</a><a href='javascript:void(0)'>崇左</a><a href='javascript:void(0)'>长寿</a><a href='javascript:void(0)'>昌黎</a><a href='javascript:void(0)'>昌都</a><a href='javascript:void(0)'>崇州</a><a href='javascript:void(0)'>楚雄</a><a href='javascript:void(0)'>长清</a><a href='javascript:void(0)'>长岛</a><a href='javascript:void(0)'>长兴</a><a href='javascript:void(0)'>长葛</a><a href='javascript:void(0)'>长乐</a><a href='javascript:void(0)'>昌乐</a><a href='javascript:void(0)'>长丰</a><a href='javascript:void(0)'>淳安</a><a href='javascript:void(0)'>昌邑</a></div><div class='cityCon event_citylist' letter='D'><a href='javascript:void(0)'>东莞</a><a href='javascript:void(0)'>大连</a><a href='javascript:void(0)'>东港</a><a href='javascript:void(0)'>登封</a><a href='javascript:void(0)'>当阳</a><a href='javascript:void(0)'>德惠</a><a href='javascript:void(0)'>定州</a><a href='javascript:void(0)'>当涂</a><a href='javascript:void(0)'>大足</a><a href='javascript:void(0)'>邓州</a><a href='javascript:void(0)'>都江堰</a><a href='javascript:void(0)'>儋州</a><a href='javascript:void(0)'>垫江</a><a href='javascript:void(0)'>大邑</a><a href='javascript:void(0)'>大兴安岭</a><a href='javascript:void(0)'>迪庆</a><a href='javascript:void(0)'>东方</a><a href='javascript:void(0)'>德宏</a><a href='javascript:void(0)'>定西</a><a href='javascript:void(0)'>东台</a><a href='javascript:void(0)'>大理</a><a href='javascript:void(0)'>大同</a><a href='javascript:void(0)'>德州</a><a href='javascript:void(0)'>德清</a><a href='javascript:void(0)'>东营</a><a href='javascript:void(0)'>达州</a><a href='javascript:void(0)'>丹东</a><a href='javascript:void(0)'>德阳</a><a href='javascript:void(0)'>大庆</a></div><div class='cityCon event_citylist' letter='E'><a href='javascript:void(0)'>鄂尔多斯</a><a href='javascript:void(0)'>恩施</a><a href='javascript:void(0)'>鄂州</a><a href='javascript:void(0)'>峨眉山</a><a href='javascript:void(0)'>恩平</a></div><div class='cityCon event_citylist' letter='F'><a href='javascript:void(0)'>肥东</a><a href='javascript:void(0)'>安溪</a><a href='javascript:void(0)'>丰县</a><a href='javascript:void(0)'>凤城</a><a href='javascript:void(0)'>肥西</a><a href='javascript:void(0)'>繁昌</a><a href='javascript:void(0)'>福安</a><a href='javascript:void(0)'>丰城</a><a href='javascript:void(0)'>奉节</a><a href='javascript:void(0)'>阜宁</a><a href='javascript:void(0)'>法库</a><a href='javascript:void(0)'>涪陵</a><a href='javascript:void(0)'>肥城</a><a href='javascript:void(0)'>福清</a><a href='javascript:void(0)'>阜新</a><a href='javascript:void(0)'>奉化</a><a href='javascript:void(0)'>丰都</a><a href='javascript:void(0)'>防城港</a><a href='javascript:void(0)'>抚顺</a><a href='javascript:void(0)'>福州</a><a href='javascript:void(0)'>佛山</a><a href='javascript:void(0)'>阜阳</a><a href='javascript:void(0)'>抚州</a></div><div class='cityCon event_citylist' letter='G'><a href='javascript:void(0)'>广州</a><a href='javascript:void(0)'>贵阳</a><a href='javascript:void(0)'>桂林</a><a href='javascript:void(0)'>赣州</a><a href='javascript:void(0)'>广安</a><a href='javascript:void(0)'>高密</a><a href='javascript:void(0)'>广元</a><a href='javascript:void(0)'>贵港</a><a href='javascript:void(0)'>高邮</a><a href='javascript:void(0)'>巩义</a><a href='javascript:void(0)'>固原</a><a href='javascript:void(0)'>固镇</a><a href='javascript:void(0)'>甘孜</a><a href='javascript:void(0)'>甘南</a><a href='javascript:void(0)'>高碑店</a><a href='javascript:void(0)'>高淳</a><a href='javascript:void(0)'>高陵</a><a href='javascript:void(0)'>公主岭</a><a href='javascript:void(0)'>广饶</a></div><div class='cityCon event_citylist' letter='H'><a href='javascript:void(0)'>合肥</a><a href='javascript:void(0)'>海南</a><a href='javascript:void(0)'>杭州</a><a href='javascript:void(0)'>惠东</a><a href='javascript:void(0)'>伊春</a><a href='javascript:void(0)'>禹州</a><a href='javascript:void(0)'>海安</a><a href='javascript:void(0)'>桦甸</a><a href='javascript:void(0)'>海城</a><a href='javascript:void(0)'>呼伦贝尔</a><a href='javascript:void(0)'>怀仁</a><a href='javascript:void(0)'>海东</a><a href='javascript:void(0)'>海西</a><a href='javascript:void(0)'>哈密</a><a href='javascript:void(0)'>和田</a><a href='javascript:void(0)'>汉南</a><a href='javascript:void(0)'>海林</a><a href='javascript:void(0)'>海阳</a><a href='javascript:void(0)'>红河</a><a href='javascript:void(0)'>户县</a><a href='javascript:void(0)'>怀远</a><a href='javascript:void(0)'>鹤山</a><a href='javascript:void(0)'>横县</a><a href='javascript:void(0)'>海门</a><a href='javascript:void(0)'>河池</a><a href='javascript:void(0)'>贺州</a><a href='javascript:void(0)'>鹤岗</a><a href='javascript:void(0)'>黑河</a><a href='javascript:void(0)'>惠安</a><a href='javascript:void(0)'>霍邱</a><a href='javascript:void(0)'>汉中</a><a href='javascript:void(0)'>海宁</a><a href='javascript:void(0)'>怀化</a><a href='javascript:void(0)'>黄山</a><a href='javascript:void(0)'>黄石</a><a href='javascript:void(0)'>葫芦岛</a><a href='javascript:void(0)'>河源</a><a href='javascript:void(0)'>合川</a><a href='javascript:void(0)'>黄冈</a><a href='javascript:void(0)'>惠州</a><a href='javascript:void(0)'>呼和浩特</a><a href='javascript:void(0)'>哈尔滨</a><a href='javascript:void(0)'>衡水</a><a href='javascript:void(0)'>湖州</a><a href='javascript:void(0)'>邯郸</a><a href='javascript:void(0)'>衡阳</a><a href='javascript:void(0)'>海外</a><a href='javascript:void(0)'>淮北</a><a href='javascript:void(0)'>鹤壁</a><a href='javascript:void(0)'>淮安</a><a href='javascript:void(0)'>淮南</a><a href='javascript:void(0)'>海口</a><a href='javascript:void(0)'>菏泽</a></div><div class='cityCon event_citylist' letter='J'><a href='javascript:void(0)'>济南</a><a href='javascript:void(0)'>金华</a><a href='javascript:void(0)'>吉林</a><a href='javascript:void(0)'>锦州</a><a href='javascript:void(0)'>荆州</a><a href='javascript:void(0)'>济宁</a><a href='javascript:void(0)'>嘉兴</a><a href='javascript:void(0)'>江门</a><a href='javascript:void(0)'>九江</a><a href='javascript:void(0)'>江阴</a><a href='javascript:void(0)'>荆门</a><a href='javascript:void(0)'>吉安</a><a href='javascript:void(0)'>景德镇</a><a href='javascript:void(0)'>揭阳</a><a href='javascript:void(0)'>晋城</a><a href='javascript:void(0)'>焦作</a><a href='javascript:void(0)'>晋中</a><a href='javascript:void(0)'>江津</a><a href='javascript:void(0)'>鸡西</a><a href='javascript:void(0)'>江都</a><a href='javascript:void(0)'>胶南</a><a href='javascript:void(0)'>靖江</a><a href='javascript:void(0)'>酒泉</a><a href='javascript:void(0)'>佳木斯</a><a href='javascript:void(0)'>济源</a><a href='javascript:void(0)'>晋州</a><a href='javascript:void(0)'>嘉峪关</a><a href='javascript:void(0)'>金昌</a><a href='javascript:void(0)'>姜堰</a><a href='javascript:void(0)'>胶州</a><a href='javascript:void(0)'>京山</a><a href='javascript:void(0)'>金湖</a><a href='javascript:void(0)'>靖安</a><a href='javascript:void(0)'>蓟县</a><a href='javascript:void(0)'>金坛</a><a href='javascript:void(0)'>句容</a><a href='javascript:void(0)'>简阳</a><a href='javascript:void(0)'>金堂</a><a href='javascript:void(0)'>济阳</a><a href='javascript:void(0)'>进贤</a><a href='javascript:void(0)'>即墨</a><a href='javascript:void(0)'>建德</a></div><div class='cityCon event_citylist' letter='K'><a href='javascript:void(0)'>昆明</a><a href='javascript:void(0)'>克孜勒苏</a><a href='javascript:void(0)'>奎屯</a><a href='javascript:void(0)'>开县</a><a href='javascript:void(0)'>克拉玛依</a><a href='javascript:void(0)'>康平</a><a href='javascript:void(0)'>开阳</a><a href='javascript:void(0)'>开平</a><a href='javascript:void(0)'>喀什</a><a href='javascript:void(0)'>昆山</a><a href='javascript:void(0)'>开封</a></div><div class='cityCon event_citylist' letter='L'><a href='javascript:void(0)'>辽阳</a><a href='javascript:void(0)'>临汾</a><a href='javascript:void(0)'>临沂</a><a href='javascript:void(0)'>兰州</a><a href='javascript:void(0)'>洛阳</a><a href='javascript:void(0)'>柳州</a><a href='javascript:void(0)'>乐山</a><a href='javascript:void(0)'>廊坊</a><a href='javascript:void(0)'>聊城</a><a href='javascript:void(0)'>连云港</a><a href='javascript:void(0)'>泸州</a><a href='javascript:void(0)'>六安</a><a href='javascript:void(0)'>来宾</a><a href='javascript:void(0)'>漯河</a><a href='javascript:void(0)'>莱州</a><a href='javascript:void(0)'>溧阳</a><a href='javascript:void(0)'>临沧</a><a href='javascript:void(0)'>临海</a><a href='javascript:void(0)'>龙岩</a><a href='javascript:void(0)'>拉萨</a><a href='javascript:void(0)'>凉山</a><a href='javascript:void(0)'>丽江</a><a href='javascript:void(0)'>六盘水</a><a href='javascript:void(0)'>娄底</a><a href='javascript:void(0)'>临清</a><a href='javascript:void(0)'>莱芜</a><a href='javascript:void(0)'>醴陵</a><a href='javascript:void(0)'>临夏</a><a href='javascript:void(0)'>滦南</a><a href='javascript:void(0)'>龙门</a><a href='javascript:void(0)'>洛宁</a><a href='javascript:void(0)'>乐亭</a><a href='javascript:void(0)'>兰考</a><a href='javascript:void(0)'>梁平</a><a href='javascript:void(0)'>栾川</a><a href='javascript:void(0)'>罗源</a><a href='javascript:void(0)'>辽源</a><a href='javascript:void(0)'>莱西</a><a href='javascript:void(0)'>临安</a><a href='javascript:void(0)'>临朐</a><a href='javascript:void(0)'>连江</a><a href='javascript:void(0)'>庐江</a><a href='javascript:void(0)'>莱阳</a><a href='javascript:void(0)'>浏阳</a><a href='javascript:void(0)'>蓝田</a><a href='javascript:void(0)'>滦县</a><a href='javascript:void(0)'>辽中</a><a href='javascript:void(0)'>丽水</a><a href='javascript:void(0)'>耒阳</a><a href='javascript:void(0)'>龙海</a><a href='javascript:void(0)'>龙口</a><a href='javascript:void(0)'>陇南</a><a href='javascript:void(0)'>吕梁</a></div><div class='cityCon event_citylist' letter='M'><a href='javascript:void(0)'>闽清</a><a href='javascript:void(0)'>孟津</a><a href='javascript:void(0)'>牡丹江</a><a href='javascript:void(0)'>梅州</a><a href='javascript:void(0)'>马鞍山</a><a href='javascript:void(0)'>绵阳</a></div><div class='cityCon event_citylist' letter='M '><a href='javascript:void(0)'>茂名</a><a href='javascript:void(0)'>眉山</a></div><div class='cityCon event_citylist' letter='N'><a href='javascript:void(0)'>南宁</a><a href='javascript:void(0)'>宁波</a><a href='javascript:void(0)'>南京</a><a href='javascript:void(0)'>南通</a><a href='javascript:void(0)'>南充</a><a href='javascript:void(0)'>南昌</a><a href='javascript:void(0)'>南阳</a><a href='javascript:void(0)'>宁德</a><a href='javascript:void(0)'>内江</a><a href='javascript:void(0)'>南川</a><a href='javascript:void(0)'>那曲</a><a href='javascript:void(0)'>怒江</a><a href='javascript:void(0)'>南安</a><a href='javascript:void(0)'>南平</a><a href='javascript:void(0)'>宁海</a><a href='javascript:void(0)'>宁乡</a><a href='javascript:void(0)'>农安</a></div><div class='cityCon event_citylist' letter='P'><a href='javascript:void(0)'>蓬莱</a><a href='javascript:void(0)'>彭州</a><a href='javascript:void(0)'>沛县</a><a href='javascript:void(0)'>邳州</a><a href='javascript:void(0)'>平度</a><a href='javascript:void(0)'>平湖</a><a href='javascript:void(0)'>平凉</a><a href='javascript:void(0)'>普洱</a><a href='javascript:void(0)'>普兰店</a><a href='javascript:void(0)'>普宁</a><a href='javascript:void(0)'>平阴</a><a href='javascript:void(0)'>平山</a><a href='javascript:void(0)'>攀枝花</a><a href='javascript:void(0)'>盘锦</a><a href='javascript:void(0)'>平潭</a><a href='javascript:void(0)'>莆田</a><a href='javascript:void(0)'>濮阳</a><a href='javascript:void(0)'>平顶山</a><a href='javascript:void(0)'>萍乡</a></div><div class='cityCon event_citylist' letter='Q'><a href='javascript:void(0)'>青岛</a><a href='javascript:void(0)'>清远</a><a href='javascript:void(0)'>衢州</a><a href='javascript:void(0)'>潜江</a><a href='javascript:void(0)'>泉州</a><a href='javascript:void(0)'>秦皇岛</a><a href='javascript:void(0)'>黔西南</a><a href='javascript:void(0)'>齐齐哈尔</a><a href='javascript:void(0)'>曲靖</a><a href='javascript:void(0)'>黔江</a><a href='javascript:void(0)'>黔东南</a><a href='javascript:void(0)'>钦州</a><a href='javascript:void(0)'>庆阳</a><a href='javascript:void(0)'>黔南</a><a href='javascript:void(0)'>栖霞</a><a href='javascript:void(0)'>七台河</a><a href='javascript:void(0)'>清徐</a><a href='javascript:void(0)'>青龙</a><a href='javascript:void(0)'>迁西</a><a href='javascript:void(0)'>泉港</a><a href='javascript:void(0)'>泉山</a><a href='javascript:void(0)'>清镇</a><a href='javascript:void(0)'>启东</a><a href='javascript:void(0)'>迁安</a><a href='javascript:void(0)'>青州</a><a href='javascript:void(0)'>邛崃</a></div><div class='cityCon event_citylist' letter='R'><a href='javascript:void(0)'>如皋</a><a href='javascript:void(0)'>如东</a><a href='javascript:void(0)'>瑞金</a><a href='javascript:void(0)'>任丘</a><a href='javascript:void(0)'>日喀则</a><a href='javascript:void(0)'>荣昌</a><a href='javascript:void(0)'>汝阳</a><a href='javascript:void(0)'>汝州</a><a href='javascript:void(0)'>日照</a></div><div class='cityCon event_citylist' letter='S'><a href='javascript:void(0)'>沈阳</a><a href='javascript:void(0)'>石家庄</a><a href='javascript:void(0)'>三亚</a><a href='javascript:void(0)'>上海</a><a href='javascript:void(0)'>深圳</a><a href='javascript:void(0)'>苏州</a><a href='javascript:void(0)'>上饶</a><a href='javascript:void(0)'>随州</a><a href='javascript:void(0)'>三门峡</a><a href='javascript:void(0)'>十堰</a><a href='javascript:void(0)'>宿迁</a><a href='javascript:void(0)'>遂宁</a><a href='javascript:void(0)'>绍兴</a><a href='javascript:void(0)'>汕头</a><a href='javascript:void(0)'>寿光</a><a href='javascript:void(0)'>四平</a><a href='javascript:void(0)'>汕尾</a><a href='javascript:void(0)'>临猗</a><a href='javascript:void(0)'>邵阳</a><a href='javascript:void(0)'>韶关</a><a href='javascript:void(0)'>宿州</a><a href='javascript:void(0)'>商丘</a><a href='javascript:void(0)'>嵩县</a><a href='javascript:void(0)'>尚志</a><a href='javascript:void(0)'>沭阳</a><a href='javascript:void(0)'>石柱</a><a href='javascript:void(0)'>石嘴山</a><a href='javascript:void(0)'>石河子</a><a href='javascript:void(0)'>三明</a><a href='javascript:void(0)'>商洛</a><a href='javascript:void(0)'>上虞</a><a href='javascript:void(0)'>石狮</a><a href='javascript:void(0)'>双鸭山</a><a href='javascript:void(0)'>顺德</a><a href='javascript:void(0)'>朔州</a><a href='javascript:void(0)'>绥化</a><a href='javascript:void(0)'>商河</a><a href='javascript:void(0)'>松原</a><a href='javascript:void(0)'>睢宁</a></div><div class='cityCon event_citylist' letter='T'><a href='javascript:void(0)'>天津</a><a href='javascript:void(0)'>桐庐</a><a href='javascript:void(0)'>泰兴</a><a href='javascript:void(0)'>滕州</a><a href='javascript:void(0)'>天门</a><a href='javascript:void(0)'>天水</a><a href='javascript:void(0)'>桐城</a><a href='javascript:void(0)'>桐乡</a><a href='javascript:void(0)'>铜川</a><a href='javascript:void(0)'>铜陵</a><a href='javascript:void(0)'>台山</a><a href='javascript:void(0)'>潼南</a><a href='javascript:void(0)'>通辽</a><a href='javascript:void(0)'>铁岭</a><a href='javascript:void(0)'>铜山</a><a href='javascript:void(0)'>吐鲁番</a><a href='javascript:void(0)'>台安</a><a href='javascript:void(0)'>通化</a><a href='javascript:void(0)'>太仓</a><a href='javascript:void(0)'>铜仁</a><a href='javascript:void(0)'>铜梁</a><a href='javascript:void(0)'>唐山</a><a href='javascript:void(0)'>太原</a><a href='javascript:void(0)'>泰州</a><a href='javascript:void(0)'>泰安</a><a href='javascript:void(0)'>台州</a></div><div class='cityCon event_citylist' letter='W'><a href='javascript:void(0)'>武汉</a><a href='javascript:void(0)'>无锡</a><a href='javascript:void(0)'>温州</a><a href='javascript:void(0)'>万州</a><a href='javascript:void(0)'>渭南</a><a href='javascript:void(0)'>潍坊</a><a href='javascript:void(0)'>威海</a><a href='javascript:void(0)'>芜湖</a><a href='javascript:void(0)'>乌鲁木齐</a><a href='javascript:void(0)'>乌兰察布</a><a href='javascript:void(0)'>无极</a><a href='javascript:void(0)'>五河</a><a href='javascript:void(0)'>文安</a><a href='javascript:void(0)'>五常</a><a href='javascript:void(0)'>文山</a><a href='javascript:void(0)'>乌海</a><a href='javascript:void(0)'>武隆</a><a href='javascript:void(0)'>五家渠</a><a href='javascript:void(0)'>望城</a><a href='javascript:void(0)'>梧州</a><a href='javascript:void(0)'>武安</a><a href='javascript:void(0)'>万宁</a><a href='javascript:void(0)'>巫山</a><a href='javascript:void(0)'>温岭</a><a href='javascript:void(0)'>吴忠</a><a href='javascript:void(0)'>武威</a><a href='javascript:void(0)'>瓦房店</a></div><div class='cityCon event_citylist' letter='X'><a href='javascript:void(0)'>西安</a><a href='javascript:void(0)'>象山</a><a href='javascript:void(0)'>新郑</a><a href='javascript:void(0)'>荥阳</a><a href='javascript:void(0)'>新安</a><a href='javascript:void(0)'>新建</a><a href='javascript:void(0)'>新民</a><a href='javascript:void(0)'>新密</a><a href='javascript:void(0)'>辛集</a><a href='javascript:void(0)'>仙桃</a><a href='javascript:void(0)'>湘西</a><a href='javascript:void(0)'>新泰</a><a href='javascript:void(0)'>新沂</a><a href='javascript:void(0)'>兴安盟</a><a href='javascript:void(0)'>兴化</a><a href='javascript:void(0)'>忻州</a><a href='javascript:void(0)'>新津</a><a href='javascript:void(0)'>锡林郭勒盟</a><a href='javascript:void(0)'>锡林浩特</a><a href='javascript:void(0)'>新乐</a><a href='javascript:void(0)'>修文</a><a href='javascript:void(0)'>湘乡</a><a href='javascript:void(0)'>咸宁</a><a href='javascript:void(0)'>新余</a><a href='javascript:void(0)'>孝感</a><a href='javascript:void(0)'>西双版纳</a><a href='javascript:void(0)'>宣城</a><a href='javascript:void(0)'>厦门</a><a href='javascript:void(0)'>徐州</a><a href='javascript:void(0)'>西宁</a><a href='javascript:void(0)'>襄阳</a><a href='javascript:void(0)'>湘潭</a><a href='javascript:void(0)'>许昌</a><a href='javascript:void(0)'>咸阳</a><a href='javascript:void(0)'>新乡</a><a href='javascript:void(0)'>邢台</a><a href='javascript:void(0)'>信阳</a></div><div class='cityCon event_citylist' letter='Y'><a href='javascript:void(0)'>营口</a><a href='javascript:void(0)'>益阳</a><a href='javascript:void(0)'>宜兴</a><a href='javascript:void(0)'>运城</a><a href='javascript:void(0)'>烟台</a><a href='javascript:void(0)'>扬州</a><a href='javascript:void(0)'>银川</a><a href='javascript:void(0)'>宜昌</a><a href='javascript:void(0)'>岳阳</a><a href='javascript:void(0)'>盐城</a><a href='javascript:void(0)'>宜春</a><a href='javascript:void(0)'>玉溪</a><a href='javascript:void(0)'>延边</a><a href='javascript:void(0)'>永州</a><a href='javascript:void(0)'>阳泉</a><a href='javascript:void(0)'>玉林</a><a href='javascript:void(0)'>阳江</a><a href='javascript:void(0)'>永川</a><a href='javascript:void(0)'>宜宾</a><a href='javascript:void(0)'>伊犁</a><a href='javascript:void(0)'>云浮</a><a href='javascript:void(0)'>榆林</a><a href='javascript:void(0)'>宜良</a><a href='javascript:void(0)'>攸县</a><a href='javascript:void(0)'>雅安</a><a href='javascript:void(0)'>元氏</a><a href='javascript:void(0)'>依兰</a><a href='javascript:void(0)'>永城</a><a href='javascript:void(0)'>永泰</a><a href='javascript:void(0)'>云阳</a><a href='javascript:void(0)'>阳曲</a><a href='javascript:void(0)'>邕宁</a><a href='javascript:void(0)'>玉山</a><a href='javascript:void(0)'>鹰潭</a><a href='javascript:void(0)'>仪征</a><a href='javascript:void(0)'>余姚</a><a href='javascript:void(0)'>义乌</a><a href='javascript:void(0)'>永康</a><a href='javascript:void(0)'>鄢陵</a><a href='javascript:void(0)'>延安</a><a href='javascript:void(0)'>阳春</a><a href='javascript:void(0)'>玉田</a><a href='javascript:void(0)'>榆树</a><a href='javascript:void(0)'>永春</a><a href='javascript:void(0)'>永登</a><a href='javascript:void(0)'>榆中</a><a href='javascript:void(0)'>宜阳</a><a href='javascript:void(0)'>伊川</a><a href='javascript:void(0)'>偃师</a><a href='javascript:void(0)'>玉环</a><a href='javascript:void(0)'>宜都</a></div><div class='cityCon event_citylist' letter='Z'><a href='javascript:void(0)'>郑州</a><a href='javascript:void(0)'>中牟</a><a href='javascript:void(0)'>肇东</a><a href='javascript:void(0)'>章丘</a><a href='javascript:void(0)'>庄河</a><a href='javascript:void(0)'>张掖</a><a href='javascript:void(0)'>招远</a><a href='javascript:void(0)'>昭通</a><a href='javascript:void(0)'>中卫</a><a href='javascript:void(0)'>邹城</a><a href='javascript:void(0)'>邹平</a><a href='javascript:void(0)'>遵化</a><a href='javascript:void(0)'>诸暨</a><a href='javascript:void(0)'>镇海</a><a href='javascript:void(0)'>钟祥</a><a href='javascript:void(0)'>忠县</a><a href='javascript:void(0)'>肇州</a><a href='javascript:void(0)'>肇源</a><a href='javascript:void(0)'>周至</a><a href='javascript:void(0)'>赵县</a><a href='javascript:void(0)'>枝江</a><a href='javascript:void(0)'>湛江</a><a href='javascript:void(0)'>驻马店</a><a href='javascript:void(0)'>肇庆</a><a href='javascript:void(0)'>张家界</a><a href='javascript:void(0)'>张家港</a><a href='javascript:void(0)'>富阳</a><a href='javascript:void(0)'>资阳</a><a href='javascript:void(0)'>周口</a><a href='javascript:void(0)'>自贡</a><a href='javascript:void(0)'>遵义</a><a href='javascript:void(0)'>张家口</a><a href='javascript:void(0)'>枣庄</a><a href='javascript:void(0)'>珠海</a><a href='javascript:void(0)'>舟山</a><a href='javascript:void(0)'>淄博</a><a href='javascript:void(0)'>中山</a><a href='javascript:void(0)'>镇江</a><a href='javascript:void(0)'>漳州</a><a href='javascript:void(0)'>株洲</a></div>
+                        </div>
+                    </div>
+                        </div>
+                        <div class="" id="div_event_city_input" style="position: absolute; top: 0; left: 62%;"></div>
+                    </li>
+
+                    <li>
+                        <label></label>
+                        <input type="button" value="立即开通" class="btnStyle" id="img_submit" />
+                    </li>
+                    <li class="noMar gray9">
+                        <label></label>
+                        <input type="checkbox" checked="checked" id="agree" name="agree" />我同意<a href="/Register/ServiceInfo" class="blue">《搜房网服务协议》</a>
+                    </li>
+                </ul>
+            </div>
+
+            
+            <div class="rightLogin">
+    <ul class="rightList">
+        <li>已有通行证账号，请直接登录</li>
+        <li class="btnBox">
+            <input type="button" value="登 录" class="btnStyle" onclick="window.open('https://passport.fang.com')" /></li>
+        <li>您还可以用其他方式直接登录：</li>
+        <li class="other">
+            <a href="/ThirPartyLogin/QQLogin">
+                <img src="https://static.soufunimg.com/passport/pcimages/Connect_logo_qq.png" width="16" height="16" alt="腾讯QQ登录">
+                QQ登录</a>
+            <a href="/ThirPartyLogin/SinaLogin">
+                <img src="https://static.soufunimg.com/passport/pcimages/Connect_logo_sina.png" width="18" height="16" alt="新浪微博登录">
+                微博登录</a>
+            <br />
+            <br />
+            <a href="/ThirPartyLogin/BaiduLogin">
+                <img src="https://static.soufunimg.com/passport/pcimages/login-short.png" alt="百度登录">
+                百度登录</a>
+        </li>
+    </ul>
+    <ul class="rightJjr">
+        <li style="color:gray;">如果您是经纪人，请点击这里注册</li>
+        <li>
+            <input type="button" value="搜房帮入口" class="btnStyle" onclick="window.open('http://agent.fang.com/AgentRegister.aspx')" /></li>
+    </ul>
+    <ul class="rightJjr rightList">
+        <li>
+            <input type="button" value="装修帮入口" class="btnStyle" style="background-color:#ffd800;border:3px solid #ffd800;border-bottom:3px solid #b9bb7d" onclick="window.open('http://dianpu.fang.com/register.aspx')" /></li>
+    </ul>
+</div>
+
+            <div class="clear"></div>
+        </div>
+        <div class="footer">
+            
+            <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="dns-prefetch" href="//static.soufunimg.com">
+    <link rel="dns-prefetch" href="//captcha.fang.com">
+    <link rel="dns-prefetch" href="//countpvn.3g.fang.com">
+    <title>标准尾部</title>
+    <style type="text/css">
+div,form,img,ul,ol,li,dl,dt,dd,p{margin:0;padding:0px;border:0;}
+.sfunfooter20120411{width:1200px;background:#fff;color:#333;font-size:12px;font-family:'宋体';text-align:center;clear:both;margin:0 auto;}
+.sfunfooter20120411 a:link{font-size:12px;color:#333;text-decoration:none;}
+.sfunfooter20120411 a:visited{font-size:12px;color:#333;text-decoration:none;}
+.sfunfooter20120411 a:hover{font-size:12px;color:#c00;text-decoration:underline;}
+.sfunfooter20120411 .song{line-height:20px;}
+.sfunfooter20120411 .verdana{line-height:20px;font-family: Verdana;}
+.sfunfooter20120411 .verdana a{color:#333;font-family:'宋体';padding:2px 7px;text-decoration:none;}
+.sfunfooter20120411 .verdana a:hover{color:#c00;text-decoration:underline;}
+.sfunfooter20120411 .verdana a:hover{color:#c00;text-decoration:underline;}
+.sfunfooter20120411 .verdana a.iconip{ background:url(https://static.soufunimg.com/passport/pcimages/mob.png) no-repeat;padding-left:20px}
+.sfunfooter20120411 .verdana a.iconan{ background:url(https://static.soufunimg.com/passport/pcimages/mob.png) no-repeat 0 -45px;padding-left:20px}
+.sfunfooter20120411 em{ font-style:normal;font-family: Verdana;}
+.sfunfooter20120411 .spacing{line-height:23px;letter-spacing:3px;font-family:Verdana;margin-top:5px;}
+.sfunfooter20120411 td a{display:block}
+.sfunfooter20120411 td a:hover{color:#c00;text-decoration:none;}
+.footershaixa{position:relative; z-index:2}
+.footershaixa a{color:#333;text-decoration:none;}
+.footershaixb{display:none;width:500px;height:175px;position:absolute;left:-230px;top:16px;cursor:auto;background:#fff;border:1px solid #c00;text-align:left;}
+.footershaixa.activexiala div{display:block;padding:5px 10px;}
+.footershaixa.activexiala div td{line-height:22px;}
+</style>
+</head>
+
+<body>
+    <!--20120411搜房网统一版尾begin-->
+
+    <div class="sfunfooter20120411">
+        <div class="verdana">
+            <a href="http://www.fang.com/aboutus/index.asp" target="_blank">关于我们</a>‖
+		<a href="http://www.fang.com/hezuo_file/house/index.html" target="_blank">网站合作</a>‖
+       <a href="http://www.fang.com/aboutus/contactus.html" target="_blank">联系我们</a>‖
+        <a href="http://www.fang.com/aboutus/marketing/index.html" target="_blank">网络营销</a>‖
+        <a href="http://www.fang.com/zhaopin" target="_blank">招聘信息</a>‖
+      <span onmouseover="this.className='footershaixa activexiala'" onmouseout="this.className='footershaixa'" style="width: 80px"><a href="http://www.fang.com/SoufunFamily.htm">搜房网房天下家族</a>‖<div class="footershaixb">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                  <td width="16"><strong style="color: #c00;">B</strong></td>
+                  <td width="80"><a href="http://bj.fang.com/" target="_blank">北京房地产</a></td>
+                  <td width="16"><strong style="color: #c00;">D</strong></td>
+                  <td width="80"><a href="http://dg.fang.com/" target="_blank">东莞房地产</a></td>
+                  <td width="16">&nbsp;</td>
+                  <td width="80"><a href="http://hn.fang.com/" target="_blank">海南房地产</a></td>
+                  <td width="16">&nbsp;</td>
+                  <td width="100"><a href="http://nn.fang.com/" target="_blank">南宁房地产</a></td>
+                  <td width="16">&nbsp;</td>
+                  <td width="80"><a href="http://sy.fang.com/" target="_blank">沈阳房地产</a></td>
+              </tr>
+              <tr>
+                  <td><strong style="color: #c00;">C</strong></td>
+                  <td><a href="http://cd.fang.com/" target="_blank">成都房地产</a></td>
+                  <td>&nbsp;</td>
+                  <td><a href="http://dl.fang.com/" target="_blank">大连房地产</a></td>
+                  <td>&nbsp;</td>
+                  <td><a href="http://hf.fang.com" target="_blank">合肥房地产</a></td>
+                  <td><strong style="color: #c00;">Q</strong></td>
+                  <td><a href="http://qd.fang.com/" target="_blank">青岛房地产</a></td>
+                  <td><strong style="color: #c00;">T</strong></td>
+                  <td><a href="http://tj.fang.com/" target="_blank">天津房地产</a></td>
+              </tr>
+              <tr>
+                  <td>&nbsp;</td>
+                  <td><a href="http://cq.fang.com/" target="_blank">重庆房地产</a></td>
+                  <td><strong style="color: #c00;">F</strong></td>
+                  <td><a href="http://fz.fang.com/" target="_blank">福州房地产</a></td>
+                  <td><strong style="color: #c00;">J</strong></td>
+                  <td><a href="http://jn.fang.com/" target="_blank">济南房地产</a></td>
+                  <td><strong style="color: #c00;">S</strong></td>
+                  <td><a href="http://sh.fang.com/" target="_blank">上海房地产</a></td>
+                  <td><strong style="color: #c00;">W</strong></td>
+                  <td><a href="http://wuhan.fang.com/" target="_blank">武汉房地产</a></td>
+              </tr>
+              <tr>
+                  <td>&nbsp;</td>
+                  <td><a href="http://cs.fang.com/" target="_blank">长沙房地产</a></td>
+                  <td><strong style="color: #c00;">G</strong></td>
+                  <td><a href="http://gz.fang.com/" target="_blank">广州房地产</a></td>
+                  <td><strong style="color: #c00;">N</strong></td>
+                  <td><a href="http://nanjing.fang.com/" target="_blank">南京房地产</a></td>
+                  <td>&nbsp;</td>
+                  <td><a href="http://sz.fang.com/" target="_blank">深圳房地产</a></td>
+                  <td>&nbsp;</td>
+                  <td><a href="http://wuxi.fang.com/" target="_blank">无锡房地产</a></td>
+              </tr>
+              <tr>
+                  <td>&nbsp;</td>
+                  <td><a href="http://changchun.fang.com/" target="_blank">长春房地产</a></td>
+                  <td>&nbsp;</td>
+                  <td><a href="http://gy.fang.com" target="_blank">贵阳房地产</a></td>
+                  <td>&nbsp;</td>
+                  <td><a href="http://nc.fang.com/" target="_blank">南昌房地产</a></td>
+                  <td>&nbsp;</td>
+                  <td><a href="http://suzhou.fang.com/" target="_blank">苏州房地产</a></td>
+                  <td><strong style="color: #c00;">X</strong></td>
+                  <td><a href="http://xian.fang.com/" target="_blank">西安房地产</a></td>
+              </tr>
+              <tr>
+                  <td>&nbsp;</td>
+                  <td><a href="http://cz.fang.com/" target="_blank">常州房地产</a></td>
+                  <td><strong style="color: #c00;">H</strong></td>
+                  <td><a href="http://hz.fang.com/" target="_blank">杭州房地产</a></td>
+                  <td>&nbsp;</td>
+                  <td><a href="http://nb.fang.com/" target="_blank">宁波房地产</a></td>
+                  <td>&nbsp;</td>
+                  <td><a href="http://sjz.fang.com/" target="_blank">石家庄房地产</a></td>
+
+                  <td><strong style="color: #c00;">Z</strong></td>
+                  <td><a href="http://zz.fang.com/" target="_blank">郑州房地产</a></td>
+              </tr>
+
+          </table>
+          <div style="text-align: right; padding: 0px;"><a href="http://www.fang.com/SoufunFamily.htm" target="_blank">进入房天下家族&gt;&gt;</a></div>
+      </div>
+      </span>
+            <a href="http://www.fang.com/sitemap/sitemap.html" target="_blank">网站地图</a>‖
+        <a href="http://www.fang.com/service/feedback/LeaveMess.aspx/" target="_blank">意见反馈</a>‖
+         <a href="http://client.3g.fang.com/http/wap/index.html" target="_blank">手机房天下</a>‖
+         <a href="http://open.fang.com" target="_blank">开放平台</a>‖
+      <a href="http://www.fang.com/aboutus/copyright.html" target="_blank">服务声明</a>‖
+      <a href="http://www.fang.com/zt/201107/xbc.html" target="_blank">加盟搜房网</a>
+        </div>
+
+        <div class="verdana">
+            Copyright &copy;
+            <script language="javascript">
+                var dt = new Date();
+                y = dt.getFullYear(); //获取年(四位)
+                document.write(y)</script>
+            Soufun Holdings Limited, All Rights Reserved
+        </div>
+        <div class="song" style="line-height: 23px; position: relative; z-index: 1">北京搜房科技发展有限公司 版权所有<a target="_blank" href="http://www.hd315.gov.cn/beian/view.asp?bianhao=0102000110800002"><img style="border:0pt none;position:absolute;right:249px;top:-18px;" src="https://static.soufunimg.com/passport/pcimages/beian_min.gif"/>
+        </a></div>
+        <div class="song">客服电话：<em>4006308888</em> 违法信息举报邮箱：<a href="mailto:jubao@soufun.com"><em>jubao@soufun.com</em></a></div>
+
+    </div>
+
+    <!--20120411搜房网统一版尾end-->
+</body>
+</html>
+
+            
+        </div>
+    </form>
+</body>
+</html>
+
+<script type="text/javascript">
+    var _dctc = _dctc || {};
+    _dctc._account = _dctc._account || ['UA-24140496-1', 'UA-24830455-1'];
+    _dctc.isNorth = _dctc.isNorth || 'Y';
+    _dctc.bid = '1';
+    (function () {
+        var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+        script.src = 'https://static.soufunimg.com/count/load.min.js?20160330';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+</script>

@@ -1,0 +1,20 @@
+.divImageView{border:1px solid #cccccc;}
+.divImageView a{text-decoration:none;color:#ffffff;cursor:pointer;}
+.divImageView a:hover{text-decoration:underline;}
+.divImageView img{border:0px;}
+.divImageView .divLoading{display:none;margin:0px;padding:0px;z-index:101;}
+.divImageView .divLoading img{height:30px;width:30px;padding:0px;}
+.divImageView .divBimg{z-index:100;text-align:center;display:table;}
+.divImageView .imgBimg{vertical-align:middle;display:none;}
+.divImageView .divBimg span{display:table-cell;vertical-align:middle;text-align:center;*display:block;*font-family:Arial;overflow:hidden;}
+.divImageView .divNavgation{display:none;padding:0px;margin:0px;height:100px;z-index:100;}
+.divImageView .divImageTitle{background:#333333;padding-left:10px;color:#ffffff;font-size:12px;height:28px;line-height:26px;}
+.divImageView .divImageContainer{background:#eeeeeee;margin:0px;height:72px;}
+.divImageView .divLastTip{position:absolute;display:none;width:240px;height:60px;background:#222222;line-height:18px;color:#ffffff;font-size:12px;border:1px #ffffff solid;}
+.divImageView .divLastTip table{border:0px;padding:0px;margin:0px;height:99%;width:99%;}
+.divImageView .divLastTip table td.center{width:50%;padding:0px auto;}
+.divImageView .divLastTip div.nav{width:100px;height:20px;border:1px #ffffff solid;}
+.divImageView .aUp{float:left;width:13px;height:43px;background:url(../images/icon_arrow.png) no-repeat -16px -56px;margin:15px 0px 15px 5px;_display:inline;}
+.divImageView .aUp:hover{background-position:-82px -56px;}
+.divImageView .aDown{float:right;width:13px;height:43px;background:url(../images/icon_arrow.png) no-repeat -50px -56px;margin:15px 5px 15px 0px;_display:inline}
+.divImageView .aDown:hover{background-position:-66px -56px;}

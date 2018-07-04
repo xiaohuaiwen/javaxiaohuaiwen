@@ -1,0 +1,63 @@
+﻿@charset "gb2312";
+/* CSS Document */
+body{color:#333;font-size:12px;}
+li {list-style:none;}
+input { vertical-align:middle;outline:none; }
+img { border:0;}
+a:link,a:visited{color:#333;text-decoration:none; outline:none;blr:expression(this.onFocus=this.blur()); }
+a:hover,a:active{color:#F30;text-decoration:underline;}
+*{margin: 0 auto;padding: 0}
+.mt10 { margin-top:10px;}
+.mt38{ margin-top:38px;}
+.pl14 { padding-left:14px;}
+.floatl { float:left}
+.main{width:960px;height: auto;overflow: hidden;}
+.head{width:946px;padding:15px 6px 15px 3px;height: auto;overflow: hidden;}
+.head .logo{width:105px;float:left;}
+.head .text{width:700px;float:right;text-align:right;line-height:36px;color:#666;height: 36px;padding-top: 20px;}
+.big{width:960px;height: auto;overflow: hidden;clear: both;}
+.big .left{width:357px;float:left;height: auto;overflow: hidden;}
+.big .left .tbg{width:357px;height:40px;overflow: hidden;}
+.grdl {float: left;width: 178px;height: 40px;}
+.sfbdl {float: left;width: 178px;height: 40px;}
+.xx {float: left;width: 1px;height: 40px;background-color: #a7b2b6;}
+.big .left .mbg{width:349px;border-left:1px #a7b2b6 solid;border-right:1px #a7b2b6 solid;padding:0px 3px;height:auto;overflow: hidden;}
+.login{width:302px;float:none;padding:8px 18px 40px 32px;display:block;height: auto;overflow: hidden;}
+.login .fonth a{color:#666;}
+.login .fonth a:hover{color:#f30;}
+.login .top{width:313px;height: 23px;overflow: hidden;}
+.login .top .left{width:152px; float:left;}
+.login .top .right{width:160px;float:right;text-align:right;color:#7dbf0e;line-height:26px;} 
+.login .form{width:300px;height: auto;overflow: hidden;}
+.login .form .user .text{width:56px;font-size:14px; line-height:27px; float:left;}
+.login .user{width:300px;padding-bottom:30px;height:20px;}
+.login .user1{width:257px; float:left; padding-bottom:10px; height:27px; padding-left:56px;}
+.login .user2{width:257px; float:left; padding-bottom:5px; height:27px; padding-left:56px;}
+.login .input{width:185px; height:25px; float:left; border:1px #999 solid; padding:0 5px; line-height:25px; background-color:#ffffe1; font-size:14px; font-weight:bold; color:#666; font-weight: normal;}
+.login .input1{width:72px; height:25px; float:left; border:1px #999 solid; padding:0 5px; line-height:25px; background-color:#ffffe1; font-size:14px; font-weight:bold; color:#666;}
+.login .img{width:48px; float:left; padding-left:20px; padding-top:4px;}
+.login .fonth{color:#666;padding-left:10px;font-size:12px;line-height:30px;float: left;display: block;}
+.login .font12{color:#999; padding-left:5px; }
+.login .submit{width:86px;float:left;height:31px;margin:0 20px 0 0px;background-image: url(images/btu-login_14.jpg);background-repeat: no-repeat;  border:0; border-style:none;} 
+.login .submit02 {width:86px;float:left;height:31px;margin:0 20px 0 0px;border:0; border-style:none;background-image: url(images/btu-login02_21.jpg);background-repeat: no-repeat;}
+
+.main .big .left .mbg .bg2 .submit03{width:108px;float:left;height:32px;border:0;background-image: url(images/btu-reg_18.jpg);background-repeat: no-repeat; background-position:0;}
+.main .big .left .mbg .bg2 .submit04 {width:108px;float:left;height:32px;border:0;background-image: url(images/btu-reg02_29.jpg);background-repeat: no-repeat;  padding:0; border-style:none;}
+.big .left .fbg{width:357px;height:10px;background-image: url(images/login-bottom_32.jpg);clear: both; background-repeat:no-repeat;}
+.big .right{width:581px;float:right;color:#666;height: auto;overflow: hidden;}
+.big .right .top{width:581px;height:275px;overflow:hidden}
+.big .right .bottom{width:581px; height:auto; overflow:hidden;}
+.big .right .bottom .fenlei{width:155px;float:left;padding:10px 19px 0 19px;line-height:20px;height:66px;background-image: url(images/icon-xx02_18.jpg);background-repeat: no-repeat;background-position: right 0;height:auto;overflow:hidden;}
+.font1{font-size:12px;line-height:30px;background-image: url(images/icon-01.jpg);background-repeat: no-repeat;font-weight: bolder;}
+.main .head .text a {color: #666;}
+.main .head .text a:hover {color: #F30;}
+.fenlei .bg01 {background-position: 0 6px;padding-left: 25px;}
+.fenlei .bg02 {background-position: 0px -25px;padding-left: 25px;}
+.fenlei .bg03 {background-position: 0 -57px;padding-left: 33px;}
+.main .big .left .mbg .login .top .right a {color: #666;}
+.main .big .left .mbg .login .top .right a:hover {color: #f30;}
+.main .big .left .mbg .login .form .hiddendiv {height: 28px;color: #F30;line-height: 28px;padding-left: 55px;}
+.main .big .left .mbg .login .form  .hiddendiv .displsynone {display: none;}
+.main .big .left .mbg .bg2 .login-w {float: left;line-height: 30px;padding-right: 8px; font-size:14px}
+.main .big .left .mbg .bg2 {height: 36px;width: 300px;padding: 30px 10px 23px;border-top: 1px solid #dcdcdc;}
+.loginimg {display: block;float: left; cursor:pointer;}

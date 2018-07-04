@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.i18n.encoding" value="UTF-8"></constant>
+	<constant name="struts.objectFactory" value="spring"></constant>
+	<package name="default" extends="struts-default">
+		<interceptors>
+			<interceptor name="login" class="com.util.MyInterceptor"></interceptor>
+			<interceptor-stack name="forLogin">
+				<interceptor-ref name="login"></interceptor-ref>
+				<interceptor-ref name="defaultStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="forLogin"></default-interceptor-ref>
+
+		<global-results>
+			<result name="login">/MoBan/login.jsp</result>
+			<result name="index">/MoBan/index.jsp</result>
+			<result name="ok">/ok.jsp</result>
+		</global-results>
+
+		<action name="house" class="houseAction">
+			<result name="detail">/detail.jsp</result>
+			<result>/index.jsp</result>
+			<result name="adminshow">/admin/adminshow.jsp</result>
+			<result name="admindetail">/admin/admindetail.jsp</result>
+			<result name="update">/MoBan/updatehouse.jsp</result>
+			<result name="myhouse">/MoBan/myhouse.jsp</result>
+		</action>
+		<action name="user" class="userAction">
+			<result>/index.jsp</result>
+			<result name="adminindex">/admin/index.jsp</result>
+			<result name="adminlogin">/admin/login.jsp</result>
+			<result name="showuser">/admin/showuser.jsp</result>
+		</action>
+		<action name="reserve" class="reserveAction"></action>
+		<action name="ding" class="dingAction">
+			<result name="haveding">/admin/haveding.jsp</result>
+			<result name="myding">/MoBan/myding.jsp</result>
+		</action>
+	</package>
+</struts>

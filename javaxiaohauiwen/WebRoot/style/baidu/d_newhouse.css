@@ -1,0 +1,50 @@
+﻿/* CSS Document zhangcheng 2009.06.22 ������ҳ�����İ���ʽ */
+
+
+/*logo+����*/
+.logosearch20090622{width:960px;height:78px;margin-top:10px;}
+.logosearch20090622left{width:114px;height:60px;margin:0 0 0 100px;padding-top:15px;} 
+.logosearch20090622leftlogo{width:95px;height:42px;margin:0 auto;}
+.logosearch20090622leftweather{width:114px;font-family:"����";text-align:center;padding-top:5px;}
+.logosearch20090622leftweather img{}
+.logosearch20090622leftweather *{vertical-align:middle;}
+.logosearch20090622right {float:right; width:642px; height:78px; margin-right:100px!important; margin-right:50px;}
+
+/*��ҳ����*/
+.nav20090622box{width:958px;height:60px;border:1px solid #ccc;margin-bottom:0px;}
+.nav20090622box02{height:50px;margin-top:7px;width:958px;}
+.nav20090622box02 ul{float:left;background:url(images/shuxian090608.gif) left no-repeat;padding:0 8px 0 14px;}
+.nav20090622box02 ul li{line-height:22px;font-family:"����";letter-spacing:1px;}
+.nav20090622box02 ul li a{color:#014da3;}
+.nav20090622box02 ul li a:link,.nav20090622box02 ul li a:visited{text-decoration:none;}
+.nav20090622box02 ul li a:hover{color:#014da3;text-decoration:underline;}
+.nav20090622box02 ul li a:active{color:#014da3;}
+.nav20090608zi1 a:link,.nav20090608zi1 a:visited,.nav20090622box02 ul li .nav20090608zi1 a:hover{color:#f00;}
+
+	.search20090622r {float:right; background:url(images/search20090623right.gif) no-repeat;}
+	.search20090622c {float:left; height:78px; width:626px; background:url(images/search20090623center.gif) repeat-x;}
+	.search2009062200 {width:616px; height:30px; padding-left:10px;}
+	.search2009062203 {float:left; width:auto; padding:0 10px; text-align:center; height:30px; line-height:30px; font-size:14px;}
+	.search2009062204 {float:left; width:76px; text-align:center; height:30px; line-height:30px; cursor:pointer; font-size:14px; font-weight:bold; background:url(images/sousuo0.gif) no-repeat;}
+	.search20090622080118 {float:left; width:616px;}
+	.search20090622080118from {padding-top:9px;}
+	.search20090622080118 input {float:left; margin:0;}
+	.search20090622080118inputbian {float:left; height:19px; border:1px solid #7f9db9; font-size:14px; color:#666; padding-top:6px;}
+	.search20090622080118 a {margin-left:6px;}
+	.search2009062201_img {margin-left:2px; background:url(images/an_search.gif) no-repeat;}
+	.zi2 {color:#000000;}
+	.zi2 a:link {color:#000000;}
+	.noneBox {display:none;}
+        .search20090622l,.search20090622r {float:left; height:78px; width:8px; background:url(images/search20090623left.gif) no-repeat;}
+	.search20090622r {float:right; background:url(images/search20090623right.gif) no-repeat;}
+	.search20090622c {float:left; height:78px; width:626px; background:url(images/search20090623center.gif) repeat-x;}
+
+	.group {font-weight:bold; font-size:12px; color:#ff6600;}
+	.hotItem {font-size:12px; color:#ff0000; white-space:nowrap;}
+	.hotOverItem {background-position:center 50%; font-size:12px; background-image:url(images/item-bg-over.png); color:#ff0000; background-repeat:repeat-x; white-space:nowrap;}
+	.item {font-size:12px;height:14px;line-height:14px;color:#0256b8; white-space:nowrap;}
+	.itemOver {background-position:center 50%;height:14px;line-height:14px;font-size:12px; background-image:url(images/item-bg-over.png); color:#0256b8; background-repeat:repeat-x; white-space:nowrap;}
+	.itemFocus {background-position:center 50%; height:14px;line-height:14px;font-size:12px; background-image:url(images/item-bg.png); color:#ffffff; background-repeat:repeat-x; white-space:nowrap;}
+	.tip {font-size:12px; margin:0 auto; color:#666666; line-height:20px; text-align:center;}
+	.price {float:left;margin-left:1px;margin-right:1px;}
+        .searchS1 {float:left;line-height:19px;padding:9px 0 0 3px;margin:0 5px 0 0;}

@@ -1,0 +1,48 @@
+.soufun_icon0,.soufun_icon1,.soufun_icon2{float:left;height:16px;overflow:hidden;color:#333;font-size:12px;font-family:"ËÎÌו"}
+.soufun_icon0 a{float:left;color:#333;display:block;width:16px;height:16px;cursor:pointer;margin-left:5px;text-decoration:none}
+.soufun_icon1,.soufun_icon2{float:left;height:16px;overflow:hidden;color:#333;font-size:12px;font-family:"ËÎÌו"}
+.soufun_icon1 a,.soufun_icon2 a{float:left;color:#333;display:block;cursor:pointer;margin-left:5px;line-height:19px;text-decoration:none}
+.soufun_icon1 a:hover,.soufun_icon2 a:hover{float:left;color:#049;display:block;cursor:pointer;margin-left:5px;text-decoration:underline}
+.soufun_icon1 a{float:left;width:16px;height:16px;display:block}
+.soufun_icon0 span,.soufun_icon1 span,.soufun_icon2 span{float:left;line-height:18px}
+.sfico_soufun,.sfico_jtkj,.sfico_qqz,.sfico_qq1,.sfico_sina,.sfico_sina1,.sfico_baidu,.sfico_baidu1,.sfico_renren,.sfico_renren1,.sfico_kaixin001,.sfico_kaixin0011,.sfico_douban,.sfico_douban1,.sfico_ctrlc,.sfico_favorites,.sfico_163,.sfico_sohu,.sfico_qqpy,.sfico_baidukj,.sfico_taobao,.sfico_qqt,.sfico_tieba{background:url(../images/soufun_ico.png) no-repeat}
+.sfico_qqz{background-position:0 -84px}
+.sfico_qqpy{background-position:0 -260px}
+.sfico_qqt{background-position:0 -164px}
+.sfico_sina{background-position:0 -116px}
+.sfico_baidu{background-position:0 -100px}
+.sfico_baidukj{background-position:0 -244px}
+.sfico_renren{background-position:0 -180px}
+.sfico_kaixin001{background-position:0 -196px}
+.sfico_douban{background-position:0 -276px}
+.sfico_ctrlc{background-position:0 -20px}
+.sfico_favorites{background-position:0 -37px}
+.sfico_163{background-position:0 -148px}
+.sfico_sohu{background-position:0 -132px}
+.sfico_taobao{background-position:0 -229px}
+.sfico_tieba{background-position:0 -68px}
+.sfico_jtkj{background-position:0 -292px}
+.soufun_icon1 .sfico_soufun,.soufun_icon2 .sfico_soufun{width:60px;padding-left:20px}
+.soufun_icon2 a{padding-left:20px}
+.soufun_icon2 .sfico_qqz{background-position:0 -84px}
+.soufun_icon2 .sfico_sina{background-position:0 -116px}
+.soufun_icon2 .sfico_baidu{background-position:0 -100px}
+.soufun_icon2 .sfico_renren{background-position:0 -180px}
+.soufun_icon2 .sfico_kaixin001{background-position:0 -196px}
+.soufun_icon2 .sfico_douban{background-position:0 -276px}
+#soufun_iconbox .soufun_iconbox{border:#CCC solid 1px;width:240px;background:#fff;text-align:left;overflow:hidden}
+.soufun_iconboxT{background:#F2F2F2;border-bottom:1px solid #E5E5E5;line-height:28px;padding-left:5px;font-size:14px;font-weight:bolder}
+.soufun_iconboxC ul{padding:0 0 2px 0;margin:3px 6px;zoom:1;overflow:Hidden}
+.soufun_iconboxC li{font-size:12px;cursor:pointer;float:left;width:50%;height:26px;overflow:Hidden;list-style:none;list-style-position:outside}
+.soufun_iconboxC li a{height:24px;cursor:pointer;padding:0 0 0 2px;border:1px solid #fff;color:#333;display:block;text-decoration:none;overflow:hidden}
+.soufun_iconboxC li a:hover{background-color:#f2f2f2;border:1px solid #e5e5e5;text-decoration:none}
+.soufun_iconboxC .divbj{height:16px;line-height:18px;margin-top:4px;padding-left:20px;overflow:hidden}
+.textfxbox{width:252px;height:40px;overflow:hidden;background:#fff;display:none;position:absolute;cursor:pointer}
+.textfxboxtr01{width:248px;height:5px;padding-left:4px;font-size:0;background:url(../images/texticon02.gif) repeat-x}
+.textfxboxtr02{width:245px;height:34px;border:1px solid #009ad9;border-top:0;padding:0 0 0 5px}
+.textfxboxtr02 span{float:left}
+.textfxboxtr02a{width:245px;height:10px;font-size:0;text-align:right}
+.textfxboxtr02a img{vertical-align:top}
+.textfxboxtr02b{width:245px;height:16px;line-height:16px;color:#333;font-size:12px;font-family:"ËÎÌו"}
+.textfxboxtr02b a{float:left;color:#333;display:block;width:16px;height:16px;cursor:pointer;margin-left:5px;text-decoration:none}
+.PShare{width:115px;height:22px;cursor:pointer;background:url(../images/btn.gif) no-repeat}
